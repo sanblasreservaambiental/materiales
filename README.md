@@ -1,14 +1,10 @@
 # materiales-san-blas
 
 Materiales imprimibles de San Blas Reserva Ambiental.
-
-## Documentación disponible
-
 Los archivos están publicados en:
-
 https://sanblasreservaambiental.org/materiales/
 
-
+## Documentación disponible
 - [Guía de Plantas - San Blas Reserva Ambiental](https://sanblasreservaambiental.org/materiales/plantas_san_blas_reserva_ambiental.pdf)
 - [Guía de Aves San - Blas Reserva Ambiental](https://sanblasreservaambiental.org/materiales/aves_san_blas_reserva_ambiental.pdf)
 - [Mapa de San Blas Reserva Ambiental](https://sanblasreservaambiental.org/materiales/mapa_san_blas_reserva_ambiental.pdf)
