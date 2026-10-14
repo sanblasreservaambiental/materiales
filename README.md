@@ -8,12 +8,16 @@ Los archivos están publicados en:
 
 https://sanblasreservaambiental.org/materiales/
 
-- [aves_san_blas_reserva_ambiental.pdf](https://sanblasreservaambiental.org/materiales/aves_san_blas_reserva_ambiental.pdf)
-- [mapa_san_blas_reserva_ambiental.pdf](https://sanblasreservaambiental.org/materiales/mapa_san_blas_reserva_ambiental.pdf)
-- [plantas_san_blas_reserva_ambiental.pdf](https://sanblasreservaambiental.org/materiales/plantas_san_blas_reserva_ambiental.pdf)
-- [polinizadores_endemicos_canarias.pdf](https://sanblasreservaambiental.org/materiales/polinizadores_endemicos_canarias.pdf)
 
-- [Bases-concurso-curso2026-27.pdf](https://sanblasreservaambiental.org/materiales/Bases-concurso-curso2026-27.pdf)
+- [Guía de Plantas - San Blas Reserva Ambiental](https://sanblasreservaambiental.org/materiales/plantas_san_blas_reserva_ambiental.pdf)
+- [Guía de Aves San - Blas Reserva Ambiental](https://sanblasreservaambiental.org/materiales/aves_san_blas_reserva_ambiental.pdf)
+- [Mapa de San Blas Reserva Ambiental](https://sanblasreservaambiental.org/materiales/mapa_san_blas_reserva_ambiental.pdf)
+- [Polinizadores Endémicos de Canarias](https://sanblasreservaambiental.org/materiales/polinizadores_endemicos_canarias.pdf)
+
+### Concurso 2026-27
+- [Bases concurso 2026-27](https://sanblasreservaambiental.org/materiales/Bases-concurso-curso2026-27.pdf)
+- [ANEXO I Ficha de parcicipación](https://sanblasreservaambiental.org/materiales/ANEXO_I_Ficha_de_participacion.pdf)
+- [ANEXO II Relación de participantes del centro educativo](https://sanblasreservaambiental.org/materiales/Bases-concurso-curso2026-27.pdf)
 
 ## Uso
 
