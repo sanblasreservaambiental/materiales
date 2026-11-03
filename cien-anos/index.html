@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cien años después · San Blas Reserva Ambiental</title>
+<meta name="description" content="Galería de fotografías de Canarias de 1920–1930 para comparar con el presente. San Blas Reserva Ambiental.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="cabecera">
+  <p class="antetitulo">San Blas Reserva Ambiental · Materiales educativos</p>
+  <h1>Cien años después</h1>
+  <p class="entradilla">Fotografías de Canarias entre 1920 y 1930. Arrastren el deslizador para comparar cada foto original con su recreación en color, y muevan la línea del tiempo para viajar hasta hoy.</p>
+  <div class="aviso" role="note">
+    <strong>Importante.</strong> Las versiones en color son <strong>recreaciones generadas con inteligencia artificial</strong> a partir de la foto original: no son fotografías y pueden incluir detalles que no existían. El documento histórico es siempre la foto en blanco y negro.
+  </div>
+</header>
+
+<main id="galeria" class="galeria" aria-live="polite"></main>
+
+<section class="participa">
+  <h2>¿Tienen la foto de hoy?</h2>
+  <p>Si su clase ha hecho la actividad de <em>refotografía</em> o tiene una imagen actual del mismo lugar o de una escena equivalente, envíenla a <a href="mailto:tenerife.ambiental-res@barcelo.com?subject=Cien%20a%C3%B1os%20despu%C3%A9s%20%C2%B7%20foto%20de%20hoy">tenerife.ambiental-res@barcelo.com</a> indicando el número de la foto, la autoría, la fecha y la autorización para publicarla. Las fotos de personas necesitan su permiso; las de menores, el de sus familias.</p>
+</section>
+
+<footer class="pie">
+  <p>Fotografías originales: <a href="https://www.fotosantiguascanarias.org" rel="noopener">Fotos Antiguas de Canarias</a> (FEDAC, Cabildo de Gran Canaria), Colección José A. Pérez Cruz. Se citan con su número de registro. Recreaciones en color: San Blas Reserva Ambiental, generadas con IA.</p>
+</footer>
+
+<template id="plantilla">
+  <article class="tarjeta">
+    <div class="escena" data-escena>
+      <img class="capa capa-original" alt="" loading="lazy" decoding="async">
+      <div class="capa capa-color-wrap"><img class="capa-color" alt="" loading="lazy" decoding="async"></div>
+      <img class="capa capa-hoy" alt="" loading="lazy" decoding="async" hidden>
+      <div class="capa capa-pendiente" hidden>
+        <p><strong>2026</strong><br>Foto de hoy pendiente</p>
+        <p class="pequeno">¿Nos ayudan a conseguirla?</p>
+      </div>
+      <div class="cortina" aria-hidden="true"><span class="asa"></span></div>
+      <span class="etiqueta etiqueta-izq">Original</span>
+      <span class="etiqueta etiqueta-der">Recreación IA</span>
+      <span class="etiqueta etiqueta-anio" aria-hidden="true"></span>
+    </div>
+    <div class="controles">
+      <label class="control">
+        <span class="control-nombre">Original ↔ recreación en color</span>
+        <input type="range" min="0" max="100" value="50" class="r-cortina">
+      </label>
+      <label class="control">
+        <span class="control-nombre">Viaje en el tiempo: <output class="o-anio"></output></span>
+        <input type="range" min="0" max="100" value="0" class="r-tiempo">
+        <span class="marcas" aria-hidden="true"><span class="m-ini"></span><span>2026</span></span>
+      </label>
+    </div>
+    <div class="texto">
+      <h2 class="t-titulo"></h2>
+      <p class="t-meta"></p>
+      <p class="t-texto"></p>
+    </div>
+  </article>
+</template>
+
+<script src="datos.js"></script>
+<script src="galeria.js"></script>
+</body>
+</html>
