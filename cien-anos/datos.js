@@ -1,0 +1,29 @@
+/* Galería «Cien años después» · San Blas Reserva Ambiental
+   Para añadir la foto de hoy de una tarjeta: copie la imagen en img/ y rellene "hoy".
+   Ejemplo: hoy: { src: "img/002123-hoy.jpg", anio: 2026, autoria: "Nombre Apellido", nota: "Misma vista desde ..." } */
+window.GALERIA = [
+  { id:"008365", titulo:"Niños aguadores", fecha:"1927", anio:1927, autoria:"E. Fernando Baena", lugar:"Gran Canaria",
+    texto:"Niñas y niños llenan latas de metal en un pilar de piedra. Acarrear el agua era tarea de la infancia, sobre todo de las niñas. La tabacalera «La Mascota» regalaba esta imagen a sus clientes.", hoy:null },
+  { id:"025887", titulo:"Campesino arando", fecha:"c. 1920–1930", anio:1925, autoria:"Sin identificar", lugar:"Tenerife",
+    texto:"Postal «Tenerife. Campesino arando». El camello tiraba del arado en las tierras secas de las islas, antes de la llegada de los tractores.", hoy:null },
+  { id:"008862", titulo:"Aparceras del tomate", fecha:"1925–1930", anio:1927, autoria:"Teodoro Maisch", lugar:"Gran Canaria",
+    texto:"Miles de mujeres y familias campesinas trabajaron como aparceras de los grandes propietarios en el tomate de exportación.", hoy:null },
+  { id:"002390", titulo:"Almacén de empaquetado de plátanos", fecha:"1925–1930", anio:1927, autoria:"Adalberto Benítez Tugores", lugar:"Tenerife",
+    texto:"Postal de un almacén de empaquetado. La fruta salía hacia los mercados británicos en barcos de compañías como Elder Dempster, Fyffes o Yeoward.", hoy:null },
+  { id:"012614", titulo:"Almacén de empaquetado", fecha:"1928", anio:1928, autoria:"Teodoro Maisch", lugar:"Las Palmas de Gran Canaria",
+    texto:"Tras la crisis de la cochinilla, el plátano se convirtió en el gran cultivo comercial. Los huacales para empaquetarlo se fabricaban a mano.", hoy:null },
+  { id:"097343", titulo:"Almacenes de De La Torre Bros. en el Reino Unido", fecha:"1920–1930", anio:1925, autoria:"Sin identificar", lugar:"Reino Unido",
+    texto:"«Growers & Importers. Canary Islands produce»: el destino final de los plátanos, tomates y papas que salían de Canarias.", hoy:null },
+  { id:"002123", titulo:"Bahía de Santa Cruz de Tenerife", fecha:"1925–1930", anio:1927, autoria:"Joaquín González Espinosa", lugar:"Santa Cruz de Tenerife",
+    texto:"El puerto, puerta de salida de la fruta y de entrada de los primeros turistas que llegaban en los vapores ingleses.", hoy:null },
+  { id:"097506", titulo:"Aviones en el campo de vuelo de Gando", fecha:"1920–1930", anio:1926, autoria:"Sin identificar", lugar:"Telde, Gran Canaria",
+    texto:"Los primeros aviones en Gando. En julio de 1936, desde Gran Canaria despegó el Dragon Rapide que llevó a Franco a Marruecos; Gando fue después campo de concentración.", hoy:null },
+  { id:"002809", titulo:"Aula del Colegio de los Salesianos", fecha:"1920–1925", anio:1922, autoria:"SEI", lugar:"Las Palmas de Gran Canaria",
+    texto:"Una escuela urbana bien dotada, mientras en muchos pueblos del sur no había escuela cerca y la infancia trabajaba desde pequeña.", hoy:null },
+  { id:"092290", titulo:"Alumnos de un colegio", fecha:"1920–1930", anio:1925, autoria:"Fotografía Alemana", lugar:"Las Palmas de Gran Canaria",
+    texto:"Niños con uniforme y un balón de cuero. En muchos pueblos se jugaba al fútbol descalzo, con pelotas de trapos amarrados.", hoy:null },
+  { id:"019072", titulo:"Bajo la sombrilla", fecha:"1925–1930", anio:1927, autoria:"Sin identificar", lugar:"Sin datos",
+    texto:"Ocio de playa en los años veinte: los primeros pasos de una costumbre que, décadas después, transformaría el sur de Tenerife.", hoy:null },
+  { id:"097550", titulo:"Procesión de la Candelaria", fecha:"1920–1930", anio:1925, autoria:"Sin identificar", lugar:"Sin datos",
+    texto:"Religiosidad popular y fiesta: una de las tradiciones que mejor ha resistido el paso de cien años.", hoy:null }
+];

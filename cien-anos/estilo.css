@@ -1,0 +1,53 @@
+:root{
+  --fondo:#f6f1e7; --papel:#fffdf8; --tinta:#2b2620; --suave:#6f655a; --linea:#ddd3c3;
+  --acento:#b5562b; --acento-2:#6b7d3a; --sombra:0 1px 2px rgba(43,38,32,.08),0 8px 24px rgba(43,38,32,.08);
+  --radio:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --fondo:#1c1915; --papel:#26221d; --tinta:#efe8dc; --suave:#b2a796; --linea:#3a342c; --acento:#e0814f; --acento-2:#a6b86b;
+    --sombra:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --fondo:#1c1915; --papel:#26221d; --tinta:#efe8dc; --suave:#b2a796; --linea:#3a342c; --acento:#e0814f; --acento-2:#a6b86b;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.55 Georgia,"Iowan Old Style","Times New Roman",serif}
+a{color:var(--acento)}
+.cabecera,.participa,.pie{max-width:880px;margin:0 auto;padding:0 16px}
+.cabecera{padding-top:48px;padding-bottom:16px}
+.antetitulo{font:600 .78rem/1.2 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--acento-2);margin:0 0 8px}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.05;margin:0 0 12px;font-weight:600}
+.entradilla{font-size:1.12rem;color:var(--suave);margin:0 0 20px;max-width:60ch}
+.aviso{font:.92rem/1.5 system-ui,sans-serif;background:var(--papel);border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:8px;padding:12px 14px}
+.galeria{max-width:1180px;margin:24px auto;padding:0 16px;display:grid;gap:28px;grid-template-columns:repeat(auto-fill,minmax(min(100%,520px),1fr))}
+.tarjeta{background:var(--papel);border:1px solid var(--linea);border-radius:var(--radio);overflow:hidden;box-shadow:var(--sombra)}
+.escena{position:relative;aspect-ratio:3/2;background:#111;overflow:hidden;touch-action:pan-y;cursor:ew-resize;user-select:none}
+.capa,.capa-color{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.capa-color-wrap{position:absolute;inset:0}
+.capa-hoy,.capa-pendiente{opacity:0;transition:opacity .15s linear}
+.capa-pendiente{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:repeating-linear-gradient(45deg,#2f2a24 0 14px,#37312a 14px 28px);color:#f3ead9;font:1.1rem/1.3 system-ui,sans-serif}
+.capa-pendiente[hidden],.capa-hoy[hidden]{display:none}
+.capa-pendiente .pequeno{font-size:.85rem;opacity:.8;margin:.2em 0 0}
+.cortina{position:absolute;top:0;bottom:0;width:2px;background:#fff;transform:translateX(-1px);pointer-events:none;box-shadow:0 0 0 1px rgba(0,0,0,.25)}
+.asa{position:absolute;top:50%;left:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.asa::before{content:"‹ ›";position:absolute;inset:0;display:grid;place-items:center;font:700 14px/1 system-ui,sans-serif;color:#333}
+.en-presente .cortina,.en-presente .etiqueta-izq,.en-presente .etiqueta-der{opacity:0}
+.etiqueta{position:absolute;top:10px;font:600 .72rem/1 system-ui,sans-serif;letter-spacing:.04em;text-transform:uppercase;background:rgba(0,0,0,.6);color:#fff;padding:5px 8px;border-radius:999px;transition:opacity .2s}
+.etiqueta-izq{left:10px}.etiqueta-der{right:10px}
+.etiqueta-anio{left:50%;top:auto;bottom:10px;transform:translateX(-50%);font-size:.9rem;background:var(--acento)}
+.controles{display:grid;gap:10px;padding:14px 16px 4px;font:.85rem/1.3 system-ui,sans-serif}
+.control{display:grid;gap:4px}
+.control-nombre{color:var(--suave)}
+.control output{color:var(--tinta);font-weight:700}
+input[type=range]{width:100%;accent-color:var(--acento);min-height:28px}
+.marcas{display:flex;justify-content:space-between;color:var(--suave);font-size:.75rem}
+.texto{padding:6px 16px 18px}
+.t-titulo{font-size:1.3rem;margin:4px 0 2px;line-height:1.2}
+.t-meta{font:.8rem/1.4 system-ui,sans-serif;color:var(--suave);margin:0 0 8px}
+.t-texto{margin:0}
+.participa{margin:40px auto;padding-top:8px}
+.participa h2{font-size:1.5rem;margin:0 0 6px}
+.pie{border-top:1px solid var(--linea);padding-top:16px;padding-bottom:48px;font:.82rem/1.5 system-ui,sans-serif;color:var(--suave)}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
