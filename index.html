@@ -11,7 +11,7 @@
 <style>
 :root{
   --fondo:#f6f1e7; --papel:#fffdf8; --tinta:#2b2620; --suave:#6f655a; --linea:#ddd3c3;
-  --acento:#b5562b; --acento-2:#6b7d3a; --mar:#2f6f7e; --oro:#c99a2e;
+  --acento:#b5562b; --acento-2:#6b7d3a; --mar:#2f6f7e; --oro:#c99a2e; --hoja:#2e7d5b;
   --sombra:0 1px 2px rgba(43,38,32,.08),0 10px 28px rgba(43,38,32,.10); --sobre-c:#fff;
   --sombra-alta:0 2px 4px rgba(43,38,32,.10),0 18px 40px rgba(43,38,32,.16);
   --radio:16px;
@@ -21,14 +21,14 @@
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --fondo:#1c1915; --papel:#26221d; --tinta:#efe8dc; --suave:#b2a796; --linea:#3a342c;
-    --acento:#e0814f; --acento-2:#a6b86b; --mar:#6fb3c2; --oro:#e2b850; --sobre-c:#1c1915;
+    --acento:#e0814f; --acento-2:#a6b86b; --mar:#6fb3c2; --oro:#e2b850; --hoja:#6cc69a; --sobre-c:#1c1915;
     --sombra:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.3);
     --sombra-alta:0 2px 4px rgba(0,0,0,.45),0 18px 40px rgba(0,0,0,.4);
   }
 }
 :root[data-theme="dark"]{
   --fondo:#1c1915; --papel:#26221d; --tinta:#efe8dc; --suave:#b2a796; --linea:#3a342c;
-  --acento:#e0814f; --acento-2:#a6b86b; --mar:#6fb3c2; --oro:#e2b850; --sobre-c:#1c1915;
+  --acento:#e0814f; --acento-2:#a6b86b; --mar:#6fb3c2; --oro:#e2b850; --hoja:#6cc69a; --sobre-c:#1c1915;
   --sombra:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.3);
   --sombra-alta:0 2px 4px rgba(0,0,0,.45),0 18px 40px rgba(0,0,0,.4);
 }
@@ -118,6 +118,23 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
 .destacada h3{font-size:1.6rem}
 .destacada p{font-size:1.02rem}
 
+/* Ciencia ciudadana · iNaturalist */
+.inat{display:grid;grid-template-columns:1.1fr 1fr;gap:22px}
+.inat .cuerpo{padding:26px 26px 28px;gap:12px}
+.inat .cuerpo h3{font-size:1.45rem}
+.inat .cuerpo p{font-size:1rem}
+.cifra-inat{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;white-space:nowrap;margin:0 0 4px !important;color:var(--c) !important;font:650 clamp(2rem,5vw,2.8rem)/1 var(--serif) !important}
+.cifra-inat small{font:600 .95rem/1.2 var(--sans);color:var(--suave);white-space:normal}
+.pasos{counter-reset:paso;list-style:none;margin:6px 0 0;padding:0;display:grid;gap:12px}
+.pasos li{counter-increment:paso;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;color:var(--suave);font-size:.98rem}
+.pasos li::before{content:counter(paso);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  background:color-mix(in srgb,var(--c) 16%,transparent);color:var(--tinta);font:700 1rem/1 var(--sans)}
+.pasos strong{color:var(--tinta)}
+.movil{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:8px}
+.movil li{position:relative;padding-left:22px;color:var(--suave);font-size:.95rem}
+.movil li::before{content:"";position:absolute;left:4px;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--c)}
+.nota{font-size:.9rem !important;border-top:1px dashed var(--linea);padding-top:10px;margin-top:4px !important}
+
 /* Invitación y pie */
 .invita{margin:64px auto 0;display:flex;gap:18px;align-items:flex-start;background:color-mix(in srgb,var(--acento-2) 12%,var(--papel));
   border:1px solid color-mix(in srgb,var(--acento-2) 35%,var(--linea));border-radius:var(--radio);padding:22px 24px}
@@ -128,6 +145,7 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
 .pie p{margin:0 0 6px}
 
 @media (max-width:760px){
+  .inat{grid-template-columns:1fr}
   .destacada{grid-template-columns:1fr}
   .antes-despues{min-height:0;aspect-ratio:3/2}
   .destacada .cuerpo{padding:20px}
@@ -144,12 +162,13 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
     <div>
     <p class="antetitulo">San Blas Reserva Ambiental · San Miguel de Abona, Tenerife</p>
     <h1>Materiales para <em>preparar, vivir y recordar</em> la visita</h1>
-    <p class="entradilla">Guías de campo, el concurso escolar del curso 2026-27, cuadernos didácticos para el aula y una galería de fotos de hace cien años. Todo listo para descargar, imprimir o consultar sin conexión.</p>
+    <p class="entradilla">Guías de campo, el concurso escolar del curso 2026-27, cuadernos didácticos para el aula, una galería de fotos de hace cien años y el catálogo vivo de la Reserva en iNaturalist, al que puede sumarse cualquier visitante.</p>
     <ul class="atajos" aria-label="Secciones">
       <li><a href="#guias"><span class="punto" style="--c:var(--acento-2)"></span>Guías de campo</a></li>
       <li><a href="#concurso"><span class="punto" style="--c:var(--oro)"></span>Concurso 2026-27</a></li>
       <li><a href="#cuadernos"><span class="punto" style="--c:var(--acento)"></span>Cuadernos didácticos</a></li>
       <li><a href="#cien-anos"><span class="punto" style="--c:var(--mar)"></span>Cien años después</a></li>
+      <li><a href="#inaturalist"><span class="punto" style="--c:var(--hoja)"></span>Catálogo vivo en iNaturalist</a></li>
     </ul>
     </div>
     <div class="collage" aria-hidden="true">
@@ -262,7 +281,7 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
         <div class="cuerpo">
           <h3><a href="cuadernos/01-cuaderno-previsita.pdf">Cuaderno PRE-VISITA</a></h3>
           <p>Preparar la mirada: agua, paisaje e historia de las medianías del sur antes de llegar a San Blas.</p>
-          <p class="meta"><span class="chip">45 págs</span><span class="chip">4 niveles</span></p>
+          <p class="meta"><span class="chip">47 págs</span><span class="chip">4 niveles</span></p>
           <div class="acciones">
             <a class="boton" href="cuadernos/01-cuaderno-previsita.pdf">Descargar PDF</a>
             <a class="boton sec" href="cuadernos/01-cuaderno-previsita.docx">Word editable</a>
@@ -274,7 +293,7 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
         <div class="cuerpo">
           <h3><a href="cuadernos/02-cuaderno-postvisita.pdf">Cuaderno POST-VISITA</a></h3>
           <p>Volver sobre lo vivido: debates, crónicas y proyectos para cerrar el aprendizaje en clase.</p>
-          <p class="meta"><span class="chip">36 págs</span><span class="chip">4 niveles</span></p>
+          <p class="meta"><span class="chip">38 págs</span><span class="chip">4 niveles</span></p>
           <div class="acciones">
             <a class="boton" href="cuadernos/02-cuaderno-postvisita.pdf">Descargar PDF</a>
             <a class="boton sec" href="cuadernos/02-cuaderno-postvisita.docx">Word editable</a>
@@ -309,6 +328,48 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
         </div>
       </div>
     </article>
+  </section>
+
+  <!-- 5. iNaturalist -->
+  <section id="inaturalist" style="--c:var(--hoja)">
+    <div class="sec-cab">
+      <div>
+        <p class="sec-num">05 · Ciencia ciudadana</p>
+        <h2>Catálogo vivo de San Blas en iNaturalist</h2>
+        <p class="sec-desc">Entre todas las personas que recorren la Reserva estamos reuniendo un catálogo de los seres vivos que la habitan: plantas, aves, insectos, reptiles, hongos… Cada observación con foto y ubicación suma un dato real para conocer y proteger el barranco.</p>
+      </div>
+    </div>
+    <div class="inat">
+      <article class="tarjeta">
+        <div class="cuerpo">
+          <p class="cifra-inat">+500.000 m² <small>de Reserva donde cada observación cuenta</small></p>
+          <h3><a href="https://www.inaturalist.org/projects/san-blas-reserva-ambiental">Cómo colaborar</a></h3>
+          <ol class="pasos">
+            <li><span><strong>Abran una cuenta gratuita</strong> en iNaturalist, desde la web o la aplicación del móvil.</span></li>
+            <li><span><strong>Fotografíen</strong> plantas, animales u hongos durante la visita, con la ubicación del móvil activada.</span></li>
+            <li><span><strong>Suban las observaciones</strong> cuando quieran, aunque sea de vuelta en casa o en clase. iNaturalist reconoce que se hicieron dentro de la Reserva y las suma al proyecto automáticamente.</span></li>
+          </ol>
+          <p>La comunidad de iNaturalist ayuda a identificar cada especie. Las observaciones confirmadas alcanzan el «grado de investigación» y pasan a bases de datos científicas internacionales como GBIF.</p>
+          <div class="acciones">
+            <a class="boton" href="https://www.inaturalist.org/projects/san-blas-reserva-ambiental">Ver el proyecto</a>
+            <a class="boton sec" href="https://www.inaturalist.org/observations?project_id=san-blas-reserva-ambiental">Explorar las observaciones</a>
+          </div>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="cuerpo">
+          <h3>El móvil, bienvenido como herramienta de campo</h3>
+          <p>En ESO, Bachillerato y FP, el móvil es bienvenido durante la visita cuando se usa para fotografiar y catalogar la fauna y la flora. No rompe la regla de oro: el alumnado no escribe en San Blas, solo mira y fotografía, y la identificación se hace después, en clase, con el cuaderno post-visita.</p>
+          <ul class="movil">
+            <li>Solo la cámara y la aplicación, en las paradas que indique el guía y nunca caminando.</li>
+            <li>Sin salir del camino, sin arrancar plantas ni tocar animales.</li>
+            <li>Sin fotografiar a personas.</li>
+            <li>No hace falta un móvil por alumno o alumna: basta uno por equipo de 3 o 4.</li>
+          </ul>
+          <p class="nota"><strong>Alumnado menor de 14 años.</strong> iNaturalist no admite cuentas de menores de 13 años y en España el consentimiento propio para tratar datos personales se fija en 14. Lo más sencillo es que el alumnado haga las fotos con la ubicación activada y que el profesorado las suba en clase desde una cuenta del centro. Comprueben también que este uso del móvil encaja con las normas de su centro.</p>
+        </div>
+      </article>
+    </div>
   </section>
 
   <aside class="invita" aria-labelledby="t-invita">

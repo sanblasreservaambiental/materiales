@@ -24,6 +24,9 @@ Cuadernos para trabajar en el aula antes y después de la visita, para cuatro ni
 ### Cien años después
 - [Galería interactiva de fotografías de 1920-1930](https://sanblasreservaambiental.org/materiales/cien-anos/): compara cada foto original (FEDAC) con su recreación en color y viaja en el tiempo hasta hoy. Para añadir la foto actual de una imagen, edita `cien-anos/datos.js`.
 
+### Catálogo vivo en iNaturalist
+- [Proyecto San Blas Reserva Ambiental en iNaturalist](https://www.inaturalist.org/projects/san-blas-reserva-ambiental): catálogo vivo de los seres vivos observados en la Reserva. Para colaborar basta con tener una cuenta en iNaturalist y subir observaciones con ubicación GPS: las que están dentro de los más de 500.000 m² de la Reserva se suman al proyecto automáticamente.
+
 ## Uso
 
 Descarga los materiales desde los enlaces anteriores para imprimir o consultar offline.
