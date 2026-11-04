@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Materiales · San Blas Reserva Ambiental</title>
+<meta name="description" content="Materiales imprimibles y educativos de San Blas Reserva Ambiental: guías de campo, concurso escolar 2026-27, cuadernos didácticos y la galería «Cien años después».">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fondo:#f6f1e7; --papel:#fffdf8; --tinta:#2b2620; --suave:#6f655a; --linea:#ddd3c3;
+  --acento:#b5562b; --acento-2:#6b7d3a; --mar:#2f6f7e; --oro:#c99a2e;
+  --sombra:0 1px 2px rgba(43,38,32,.08),0 10px 28px rgba(43,38,32,.10); --sobre-c:#fff;
+  --sombra-alta:0 2px 4px rgba(43,38,32,.10),0 18px 40px rgba(43,38,32,.16);
+  --radio:16px;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --fondo:#1c1915; --papel:#26221d; --tinta:#efe8dc; --suave:#b2a796; --linea:#3a342c;
+    --acento:#e0814f; --acento-2:#a6b86b; --mar:#6fb3c2; --oro:#e2b850; --sobre-c:#1c1915;
+    --sombra:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.3);
+    --sombra-alta:0 2px 4px rgba(0,0,0,.45),0 18px 40px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --fondo:#1c1915; --papel:#26221d; --tinta:#efe8dc; --suave:#b2a796; --linea:#3a342c;
+  --acento:#e0814f; --acento-2:#a6b86b; --mar:#6fb3c2; --oro:#e2b850; --sobre-c:#1c1915;
+  --sombra:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.3);
+  --sombra-alta:0 2px 4px rgba(0,0,0,.45),0 18px 40px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:17px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--acento)}
+.envoltura{max-width:1120px;margin:0 auto;padding:0 16px}
+
+/* Cabecera */
+.cabecera{position:relative;overflow:hidden;border-bottom:1px solid var(--linea);
+  background:
+    radial-gradient(120% 90% at 100% 0%, color-mix(in srgb,var(--oro) 22%,transparent) 0%, transparent 55%),
+    radial-gradient(90% 80% at 0% 100%, color-mix(in srgb,var(--acento-2) 20%,transparent) 0%, transparent 60%),
+    var(--fondo)}
+.cabecera::after{content:"";position:absolute;inset:auto 0 0 0;height:120px;pointer-events:none;opacity:.5;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0 120 L0 92 C120 80 210 60 330 66 C430 72 470 38 560 30 C640 22 700 50 780 58 C880 68 960 44 1060 56 C1120 63 1170 74 1200 78 L1200 120 Z' fill='%23b5562b' fill-opacity='.10'/%3E%3Cpath d='M0 120 L0 104 C160 96 260 84 400 90 C540 96 620 76 760 80 C900 84 1020 98 1200 94 L1200 120 Z' fill='%236b7d3a' fill-opacity='.12'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
+.cabecera .envoltura{position:relative;z-index:1;padding-top:56px;padding-bottom:72px;display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
+.collage{position:relative;height:340px}
+.collage img{position:absolute;border-radius:10px;box-shadow:var(--sombra-alta);border:5px solid var(--papel);object-fit:cover;background:var(--papel)}
+.collage .c1{width:58%;aspect-ratio:3/2;left:0;top:18px;transform:rotate(-5deg)}
+.collage .c2{width:44%;aspect-ratio:3/4;right:4%;top:0;transform:rotate(4deg);object-position:top}
+.collage .c3{width:50%;aspect-ratio:3/2;left:22%;bottom:0;transform:rotate(-1.5deg)}
+.antetitulo{font:700 .78rem/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--acento-2);margin:0 0 12px}
+h1{font:650 clamp(2.4rem,7vw,4.2rem)/1.02 var(--serif);margin:0 0 16px;letter-spacing:-.01em;max-width:16ch}
+h1 em{font-style:normal;color:var(--acento)}
+.entradilla{font-size:1.15rem;color:var(--suave);margin:0 0 28px;max-width:58ch}
+.atajos{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.atajos a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--tinta);
+  background:var(--papel);border:1px solid var(--linea);border-radius:999px;padding:8px 14px;font-weight:600;font-size:.95rem;
+  box-shadow:var(--sombra);transition:transform .15s ease,border-color .15s ease}
+.atajos a:hover,.atajos a:focus-visible{transform:translateY(-2px);border-color:var(--acento)}
+.punto{width:10px;height:10px;border-radius:50%;background:var(--c,var(--acento));flex:none}
+
+/* Secciones */
+section{padding:56px 0 8px;scroll-margin-top:8px}
+.sec-cab{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.sec-num{font:700 .78rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--c);margin:0 0 8px;display:flex;align-items:center;gap:8px}
+.sec-num::before{content:"";width:28px;height:3px;border-radius:2px;background:var(--c)}
+h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
+.sec-desc{color:var(--suave);margin:8px 0 0;max-width:62ch}
+
+.rejilla{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr))}
+.rejilla.ancha{grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr))}
+
+.tarjeta{position:relative;display:flex;flex-direction:column;background:var(--papel);border:1px solid var(--linea);
+  border-radius:var(--radio);overflow:hidden;box-shadow:var(--sombra);transition:transform .2s ease,box-shadow .2s ease,border-color .2s}
+.tarjeta:hover,.tarjeta:focus-within{transform:translateY(-4px);box-shadow:var(--sombra-alta);border-color:color-mix(in srgb,var(--c) 45%,var(--linea))}
+.tarjeta::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--c);z-index:2}
+.miniatura{aspect-ratio:4/3;background:color-mix(in srgb,var(--c) 10%,var(--papel));overflow:hidden;border-bottom:1px solid var(--linea);display:grid;place-items:center}
+.miniatura img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .4s ease}
+.miniatura{position:relative}
+.miniatura.hoja img{position:absolute;left:50%;top:8%;transform:translateX(-50%);width:auto;height:auto;max-width:78%;max-height:92%;object-fit:contain;box-shadow:0 8px 22px rgba(0,0,0,.20);border-radius:3px}
+.tarjeta:hover .miniatura.hoja img{transform:translateX(-50%) translateY(-4px)}
+.ancha .miniatura{aspect-ratio:16/7}
+.ancha .miniatura.hoja img{max-width:none;max-height:none;width:62%;top:10%}
+.tarjeta:hover .miniatura img{transform:scale(1.04)}
+.cuerpo{display:flex;flex-direction:column;gap:6px;padding:16px 18px 18px;flex:1}
+.cuerpo h3{font:600 1.18rem/1.2 var(--serif);margin:0}
+.cuerpo h3 a{color:inherit;text-decoration:none}
+.cuerpo h3 a::after{content:"";position:absolute;inset:0;z-index:1}
+.cuerpo p{margin:0;color:var(--suave);font-size:.96rem}
+.meta{margin-top:auto !important;padding-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:700 .72rem/1 var(--sans);letter-spacing:.04em;text-transform:uppercase;padding:5px 8px;border-radius:999px;
+  background:color-mix(in srgb,var(--c) 14%,transparent);color:var(--tinta)}
+.chip.aviso{background:color-mix(in srgb,var(--oro) 26%,transparent)}
+.acciones{position:relative;z-index:3;display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.boton{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:.92rem;padding:9px 14px;border-radius:10px;
+  background:var(--c);color:var(--sobre-c)}
+.boton.sec{background:transparent;color:var(--tinta);border:1px solid var(--linea)}
+.boton:hover{filter:brightness(1.08)}
+.boton.sec:hover{border-color:var(--c)}
+.niveles{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 0;padding:0;list-style:none}
+.niveles li{font-size:.85rem;font-weight:600;border:1px dashed color-mix(in srgb,var(--c) 60%,var(--linea));border-radius:999px;padding:3px 10px}
+
+/* Galería destacada */
+.destacada{display:grid;grid-template-columns:1.25fr 1fr;background:var(--papel);border:1px solid var(--linea);border-radius:calc(var(--radio) + 4px);overflow:hidden;box-shadow:var(--sombra)}
+.antes-despues{position:relative;min-height:320px;background:#111}
+.antes-despues img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.antes-despues .color{clip-path:inset(0 0 0 50%);animation:barrido 7s ease-in-out infinite alternate}
+.antes-despues .raya{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.25);animation:raya 7s ease-in-out infinite alternate}
+.antes-despues .et{position:absolute;bottom:12px;font:700 .72rem/1 var(--sans);letter-spacing:.05em;text-transform:uppercase;background:rgba(0,0,0,.6);color:#fff;padding:6px 9px;border-radius:999px}
+@keyframes barrido{from{clip-path:inset(0 0 0 72%)}to{clip-path:inset(0 0 0 28%)}}
+@keyframes raya{from{left:72%}to{left:28%}}
+@media (prefers-reduced-motion: reduce){.antes-despues .color,.antes-despues .raya{animation:none}}
+.destacada .cuerpo{padding:28px 28px 30px;gap:12px;justify-content:center}
+.destacada h3{font-size:1.6rem}
+.destacada p{font-size:1.02rem}
+
+/* Invitación y pie */
+.invita{margin:64px auto 0;display:flex;gap:18px;align-items:flex-start;background:color-mix(in srgb,var(--acento-2) 12%,var(--papel));
+  border:1px solid color-mix(in srgb,var(--acento-2) 35%,var(--linea));border-radius:var(--radio);padding:22px 24px}
+.invita svg{flex:none;color:var(--acento-2)}
+.invita h2{font-size:1.4rem;margin:0 0 6px}
+.invita p{margin:0;color:var(--suave)}
+.pie{margin-top:48px;border-top:1px solid var(--linea);padding:24px 0 40px;color:var(--suave);font-size:.92rem}
+.pie p{margin:0 0 6px}
+
+@media (max-width:760px){
+  .destacada{grid-template-columns:1fr}
+  .antes-despues{min-height:0;aspect-ratio:3/2}
+  .destacada .cuerpo{padding:20px}
+  .cabecera .envoltura{padding-top:40px;padding-bottom:64px;grid-template-columns:1fr}
+  .collage{display:none}
+  .invita{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="envoltura">
+    <div>
+    <p class="antetitulo">San Blas Reserva Ambiental · San Miguel de Abona, Tenerife</p>
+    <h1>Materiales para <em>preparar, vivir y recordar</em> la visita</h1>
+    <p class="entradilla">Guías de campo, el concurso escolar del curso 2026-27, cuadernos didácticos para el aula y una galería de fotos de hace cien años. Todo listo para descargar, imprimir o consultar sin conexión.</p>
+    <ul class="atajos" aria-label="Secciones">
+      <li><a href="#guias"><span class="punto" style="--c:var(--acento-2)"></span>Guías de campo</a></li>
+      <li><a href="#concurso"><span class="punto" style="--c:var(--oro)"></span>Concurso 2026-27</a></li>
+      <li><a href="#cuadernos"><span class="punto" style="--c:var(--acento)"></span>Cuadernos didácticos</a></li>
+      <li><a href="#cien-anos"><span class="punto" style="--c:var(--mar)"></span>Cien años después</a></li>
+    </ul>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <img class="c1" src="portada/aves_san_blas_reserva_ambiental.jpg" alt="">
+      <img class="c2" src="portada/polinizadores_endemicos_canarias.jpg" alt="">
+      <img class="c3" src="cien-anos/img/002123-color.jpg" alt="">
+    </div>
+  </div>
+</header>
+
+<main class="envoltura">
+
+  <!-- 1. Documentación disponible -->
+  <section id="guias" style="--c:var(--acento-2)">
+    <div class="sec-cab">
+      <div>
+        <p class="sec-num">01 · Documentación disponible</p>
+        <h2>Guías de campo</h2>
+        <p class="sec-desc">Para reconocer en el sendero las plantas, las aves y los polinizadores de la Reserva, y para orientarse con el mapa.</p>
+      </div>
+    </div>
+    <div class="rejilla">
+      <article class="tarjeta">
+        <div class="miniatura"><img src="portada/plantas_san_blas_reserva_ambiental.jpg" alt="" loading="lazy"></div>
+        <div class="cuerpo">
+          <h3><a href="plantas_san_blas_reserva_ambiental.pdf">Guía de plantas</a></h3>
+          <p>Las especies vegetales que se encuentran en la Reserva.</p>
+          <p class="meta"><span class="chip">PDF</span><span class="chip aviso">72 MB · alta resolución</span></p>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="miniatura"><img src="portada/aves_san_blas_reserva_ambiental.jpg" alt="" loading="lazy"></div>
+        <div class="cuerpo">
+          <h3><a href="aves_san_blas_reserva_ambiental.pdf">Guía de aves</a></h3>
+          <p>Las aves que se pueden ver y oír durante el recorrido.</p>
+          <p class="meta"><span class="chip">PDF</span><span class="chip">2 págs · 4,4 MB</span></p>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="miniatura"><img src="portada/mapa_san_blas_reserva_ambiental.jpg" alt="" loading="lazy"></div>
+        <div class="cuerpo">
+          <h3><a href="mapa_san_blas_reserva_ambiental.pdf">Mapa de la Reserva</a></h3>
+          <p>Para situarse y seguir el recorrido por la Reserva.</p>
+          <p class="meta"><span class="chip">PDF</span><span class="chip">1 pág · 0,9 MB</span></p>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="miniatura"><img src="portada/polinizadores_endemicos_canarias.jpg" alt="" loading="lazy"></div>
+        <div class="cuerpo">
+          <h3><a href="polinizadores_endemicos_canarias.pdf">Polinizadores endémicos de Canarias</a></h3>
+          <p>Abejas, mariposas y otros insectos que solo viven en las islas.</p>
+          <p class="meta"><span class="chip">PDF</span><span class="chip">1 pág · 1,4 MB</span></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 2. Concurso -->
+  <section id="concurso" style="--c:var(--oro)">
+    <div class="sec-cab">
+      <div>
+        <p class="sec-num">02 · Concurso 2026-27</p>
+        <h2>Concurso escolar</h2>
+        <p class="sec-desc">Las bases y los dos anexos que el centro educativo debe rellenar para participar.</p>
+      </div>
+    </div>
+    <div class="rejilla">
+      <article class="tarjeta">
+        <div class="miniatura hoja"><img src="portada/Bases-concurso-curso2026-27.jpg" alt="" loading="lazy"></div>
+        <div class="cuerpo">
+          <h3><a href="Bases-concurso-curso2026-27.pdf">Bases del concurso 2026-27</a></h3>
+          <p>Condiciones de participación, plazos y premios.</p>
+          <p class="meta"><span class="chip">PDF</span><span class="chip">12 págs</span></p>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="miniatura hoja"><img src="portada/ANEXO_I_Ficha_de_participacion.jpg" alt="" loading="lazy"></div>
+        <div class="cuerpo">
+          <h3><a href="ANEXO_I_Ficha_de_participacion.pdf">Anexo I · Ficha de participación</a></h3>
+          <p>Datos del centro y del trabajo presentado.</p>
+          <p class="meta"><span class="chip">PDF</span><span class="chip">1 pág</span></p>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="miniatura hoja"><img src="portada/ANEXO_II_Relacion_de_participantes_del_centro_educativo.jpg" alt="" loading="lazy"></div>
+        <div class="cuerpo">
+          <h3><a href="ANEXO_II_Relacion_de_participantes_del_centro_educativo.pdf">Anexo II · Relación de participantes</a></h3>
+          <p>Listado del alumnado y profesorado del centro educativo.</p>
+          <p class="meta"><span class="chip">PDF</span><span class="chip">2 págs</span></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. Cuadernos -->
+  <section id="cuadernos" style="--c:var(--acento)">
+    <div class="sec-cab">
+      <div>
+        <p class="sec-num">03 · Cuadernos didácticos 2026-27</p>
+        <h2>Antes y después de la visita</h2>
+        <p class="sec-desc">Cuadernos para trabajar en el aula, porque durante las dos horas y media de visita el alumnado no escribe: observa, escucha y pregunta.</p>
+        <ul class="niveles" aria-label="Niveles">
+          <li>Primaria 3º-4º</li><li>Primaria 5º-6º</li><li>ESO</li><li>Bachillerato y FP</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rejilla ancha">
+      <article class="tarjeta">
+        <div class="miniatura hoja"><img src="portada/01-cuaderno-previsita.jpg" alt="" loading="lazy"></div>
+        <div class="cuerpo">
+          <h3><a href="cuadernos/01-cuaderno-previsita.pdf">Cuaderno PRE-VISITA</a></h3>
+          <p>Preparar la mirada: agua, paisaje e historia de las medianías del sur antes de llegar a San Blas.</p>
+          <p class="meta"><span class="chip">45 págs</span><span class="chip">4 niveles</span></p>
+          <div class="acciones">
+            <a class="boton" href="cuadernos/01-cuaderno-previsita.pdf">Descargar PDF</a>
+            <a class="boton sec" href="cuadernos/01-cuaderno-previsita.docx">Word editable</a>
+          </div>
+        </div>
+      </article>
+      <article class="tarjeta">
+        <div class="miniatura hoja"><img src="portada/02-cuaderno-postvisita.jpg" alt="" loading="lazy"></div>
+        <div class="cuerpo">
+          <h3><a href="cuadernos/02-cuaderno-postvisita.pdf">Cuaderno POST-VISITA</a></h3>
+          <p>Volver sobre lo vivido: debates, crónicas y proyectos para cerrar el aprendizaje en clase.</p>
+          <p class="meta"><span class="chip">36 págs</span><span class="chip">4 niveles</span></p>
+          <div class="acciones">
+            <a class="boton" href="cuadernos/02-cuaderno-postvisita.pdf">Descargar PDF</a>
+            <a class="boton sec" href="cuadernos/02-cuaderno-postvisita.docx">Word editable</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4. Cien años después -->
+  <section id="cien-anos" style="--c:var(--mar)">
+    <div class="sec-cab">
+      <div>
+        <p class="sec-num">04 · Galería interactiva</p>
+        <h2>Cien años después</h2>
+      </div>
+    </div>
+    <article class="destacada tarjeta">
+      <div class="antes-despues" aria-hidden="true">
+        <img src="cien-anos/img/008365-original.jpg" alt="" loading="lazy">
+        <img class="color" src="cien-anos/img/008365-color.jpg" alt="" loading="lazy">
+        <span class="raya"></span>
+        <span class="et" style="left:12px">1927</span>
+        <span class="et" style="right:12px">Recreación IA</span>
+      </div>
+      <div class="cuerpo">
+        <h3><a href="cien-anos/">Fotografías de Canarias de 1920-1930</a></h3>
+        <p>Comparen cada foto original de la FEDAC con su recreación en color y viajen en el tiempo hasta hoy. Doce escenas: aguadores, aparceras del tomate, almacenes de plátanos, la bahía de Santa Cruz…</p>
+        <p class="meta"><span class="chip">12 fotos</span><span class="chip">Antes / después</span><span class="chip">Línea del tiempo</span></p>
+        <div class="acciones">
+          <a class="boton" href="cien-anos/">Abrir la galería</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <aside class="invita" aria-labelledby="t-invita">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H5.2L4 17.2V4z"/><path d="M8 9h8M8 12h5"/></svg>
+    <div>
+      <h2 id="t-invita">¿Han creado actividades con estos materiales?</h2>
+      <p>Compártanlas con otros centros. Envíenlas a <a href="mailto:tenerife.ambiental-res@barcelo.com?subject=Actividad%20para%20el%20repositorio">tenerife.ambiental-res@barcelo.com</a> indicando la materia y el curso, y las sumaremos al repositorio del profesorado. Si tienen la foto actual de alguna escena de la galería, también nos ayuda.</p>
+    </div>
+  </aside>
+
+</main>
+
+<footer class="pie">
+  <div class="envoltura">
+    <p><strong>Uso:</strong> descarguen los materiales desde los enlaces para imprimirlos o consultarlos sin conexión.</p>
+    <p>San Blas Reserva Ambiental · San Miguel de Abona, Tenerife. Fotografías históricas: Fotos Antiguas de Canarias (FEDAC, Cabildo de Gran Canaria); recreaciones en color generadas con IA.</p>
+  </div>
+</footer>
+
+</body>
+</html>
