@@ -101,6 +101,10 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
 .boton.sec{background:transparent;color:var(--tinta);border:1px solid var(--linea)}
 .boton:hover{filter:brightness(1.08)}
 .boton.sec:hover{border-color:var(--c)}
+.fecha{font:600 .82rem/1.2 var(--sans);color:var(--suave);white-space:nowrap}
+.subtitulo{font:600 1.15rem/1.25 var(--serif);margin:34px 0 14px}
+.historico{margin:22px 0 0;font-size:.95rem}
+.historico a{font-weight:700}
 .niveles{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 0;padding:0;list-style:none}
 .niveles li{font-size:.85rem;font-weight:600;border:1px dashed color-mix(in srgb,var(--c) 60%,var(--linea));border-radius:999px;padding:3px 10px}
 
@@ -166,7 +170,7 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
     <ul class="atajos" aria-label="Secciones">
       <li><a href="#guias"><span class="punto" style="--c:var(--acento-2)"></span>Guías de campo</a></li>
       <li><a href="#concurso"><span class="punto" style="--c:var(--oro)"></span>Concurso 2026-27</a></li>
-      <li><a href="#cuadernos"><span class="punto" style="--c:var(--acento)"></span>Cuadernos didácticos</a></li>
+      <li><a href="#cuadernos"><span class="punto" style="--c:var(--acento)"></span>Cuadernos y dossieres</a></li>
       <li><a href="#cien-anos"><span class="punto" style="--c:var(--mar)"></span>Cien años después</a></li>
       <li><a href="#inaturalist"><span class="punto" style="--c:var(--hoja)"></span>Catálogo vivo en iNaturalist</a></li>
     </ul>
@@ -267,7 +271,7 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
   <section id="cuadernos" style="--c:var(--acento)">
     <div class="sec-cab">
       <div>
-        <p class="sec-num">03 · Cuadernos didácticos 2026-27</p>
+        <p class="sec-num">03 · Cuadernos y dossieres 2026-27</p>
         <h2>Antes y después de la visita</h2>
         <p class="sec-desc">Cuadernos para trabajar en el aula, porque durante las dos horas y media de visita el alumnado no escribe: observa, escucha y pregunta.</p>
         <ul class="niveles" aria-label="Niveles">
@@ -279,9 +283,9 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
       <article class="tarjeta">
         <div class="miniatura hoja"><img src="portada/01-cuaderno-previsita.jpg" alt="" loading="lazy"></div>
         <div class="cuerpo">
-          <h3><a href="cuadernos/01-cuaderno-previsita.pdf">Cuaderno PRE-VISITA</a></h3>
+          <h3><a href="cuadernos/01-cuaderno-previsita.pdf">Cuaderno PRE-VISITA</a> <span class="fecha">(actualizado el 8 nov. 2026)</span></h3>
           <p>Preparar la mirada: agua, paisaje e historia de las medianías del sur antes de llegar a San Blas.</p>
-          <p class="meta"><span class="chip">47 págs</span><span class="chip">4 niveles</span></p>
+          <p class="meta"><span class="chip">51 págs</span><span class="chip">4 niveles</span></p>
           <div class="acciones">
             <a class="boton" href="cuadernos/01-cuaderno-previsita.pdf">Descargar PDF</a>
             <a class="boton sec" href="cuadernos/01-cuaderno-previsita.docx">Word editable</a>
@@ -291,7 +295,7 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
       <article class="tarjeta">
         <div class="miniatura hoja"><img src="portada/02-cuaderno-postvisita.jpg" alt="" loading="lazy"></div>
         <div class="cuerpo">
-          <h3><a href="cuadernos/02-cuaderno-postvisita.pdf">Cuaderno POST-VISITA</a></h3>
+          <h3><a href="cuadernos/02-cuaderno-postvisita.pdf">Cuaderno POST-VISITA</a> <span class="fecha">(actualizado el 4 nov. 2026)</span></h3>
           <p>Volver sobre lo vivido: debates, crónicas y proyectos para cerrar el aprendizaje en clase.</p>
           <p class="meta"><span class="chip">38 págs</span><span class="chip">4 niveles</span></p>
           <div class="acciones">
@@ -301,6 +305,22 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
         </div>
       </article>
     </div>
+    <h3 class="subtitulo">Dossieres de fuentes para Secundaria y Bachillerato</h3>
+    <div class="rejilla ancha">
+      <article class="tarjeta">
+        <div class="miniatura hoja"><img src="portada/dossier-B3-senorio-de-canarias.jpg" alt="" loading="lazy"></div>
+        <div class="cuerpo">
+          <h3><a href="dossieres/dossier-B3-senorio-de-canarias.pdf">¿Se puede vender una isla que no es tuya?</a> <span class="fecha">(actualizado el 8 nov. 2026)</span></h3>
+          <p>El señorío de Canarias y la venta del derecho a conquistar Tenerife (1402–1495): siete fuentes con versión actualizada, comentario guiado y rúbrica. Para el programa B3 e <em>Historia de Canarias</em>; versión ligera para ESO en el cuaderno pre-visita.</p>
+          <p class="meta"><span class="chip">13 págs</span><span class="chip">Bachillerato</span><span class="chip">ESO</span></p>
+          <div class="acciones">
+            <a class="boton" href="dossieres/dossier-B3-senorio-de-canarias.pdf">Descargar PDF</a>
+            <a class="boton sec" href="dossieres/dossier-B3-senorio-de-canarias.docx">Word editable</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="historico">Aquí siempre está la última versión de cada cuaderno y dossier. <a href="historico.html">Consulten el histórico de versiones</a>.</p>
   </section>
 
   <!-- 4. Cien años después -->
