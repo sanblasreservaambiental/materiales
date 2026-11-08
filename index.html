@@ -139,6 +139,26 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
 .movil li::before{content:"";position:absolute;left:4px;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--c)}
 .nota{font-size:.9rem !important;border-top:1px dashed var(--linea);padding-top:10px;margin-top:4px !important}
 
+/* Fuentes y lecturas */
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}
+.filtros button{font:600 .92rem/1 var(--sans);color:var(--tinta);background:var(--papel);border:1px solid var(--linea);border-radius:999px;padding:8px 14px;cursor:pointer}
+.filtros button[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:var(--sobre-c)}
+.filtros button:focus-visible{outline:2px solid var(--c);outline-offset:2px}
+.bloque-fuentes{background:var(--papel);border:1px solid var(--linea);border-radius:var(--radio);box-shadow:var(--sombra);margin:0 0 14px;overflow:hidden}
+.bloque-fuentes summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;font:600 1.12rem/1.25 var(--serif)}
+.bloque-fuentes summary::-webkit-details-marker{display:none}
+.bloque-fuentes summary::after{content:"+";font:700 1.3rem/1 var(--sans);color:var(--c)}
+.bloque-fuentes[open] summary::after{content:"–"}
+.bloque-fuentes summary small{font:600 .82rem/1 var(--sans);color:var(--suave);margin-left:auto}
+.lista-fuentes{list-style:none;margin:0;padding:0 20px 8px}
+.lista-fuentes li{padding:12px 0;border-top:1px solid var(--linea)}
+.lista-fuentes .cita{margin:0;color:var(--tinta);font-size:.97rem;overflow-wrap:anywhere}
+.lista-fuentes .cita a{color:inherit;text-decoration-color:color-mix(in srgb,var(--c) 60%,transparent);text-underline-offset:2px}
+.lista-fuentes .uso{margin:4px 0 0;color:var(--suave);font-size:.9rem}
+.lista-fuentes .meta{padding-top:6px}
+.chip.cerrado{background:color-mix(in srgb,var(--acento) 18%,transparent)}
+.sin-resultados{color:var(--suave)}
+
 /* Invitación y pie */
 .invita{margin:64px auto 0;display:flex;gap:18px;align-items:flex-start;background:color-mix(in srgb,var(--acento-2) 12%,var(--papel));
   border:1px solid color-mix(in srgb,var(--acento-2) 35%,var(--linea));border-radius:var(--radio);padding:22px 24px}
@@ -166,13 +186,14 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
     <div>
     <p class="antetitulo">San Blas Reserva Ambiental · San Miguel de Abona, Tenerife</p>
     <h1>Materiales para <em>preparar, vivir y recordar</em> la visita</h1>
-    <p class="entradilla">Guías de campo, el concurso escolar del curso 2026-27, cuadernos didácticos para el aula, una galería de fotos de hace cien años y el catálogo vivo de la Reserva en iNaturalist, al que puede sumarse cualquier visitante.</p>
+    <p class="entradilla">Guías de campo, el concurso escolar del curso 2026-27, cuadernos didácticos para el aula, una galería de fotos de hace cien años, el catálogo vivo de la Reserva en iNaturalist, al que puede sumarse cualquier visitante, y las fuentes en las que se apoya todo.</p>
     <ul class="atajos" aria-label="Secciones">
       <li><a href="#guias"><span class="punto" style="--c:var(--acento-2)"></span>Guías de campo</a></li>
       <li><a href="#concurso"><span class="punto" style="--c:var(--oro)"></span>Concurso 2026-27</a></li>
       <li><a href="#cuadernos"><span class="punto" style="--c:var(--acento)"></span>Cuadernos y dossieres</a></li>
       <li><a href="#cien-anos"><span class="punto" style="--c:var(--mar)"></span>Cien años después</a></li>
       <li><a href="#inaturalist"><span class="punto" style="--c:var(--hoja)"></span>Catálogo vivo en iNaturalist</a></li>
+      <li><a href="#fuentes"><span class="punto" style="--c:var(--acento-2)"></span>Fuentes y lecturas</a></li>
     </ul>
     </div>
     <div class="collage" aria-hidden="true">
@@ -392,6 +413,27 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
     </div>
   </section>
 
+  <!-- 6. Fuentes y lecturas (datos en fuentes.js) -->
+  <section id="fuentes" style="--c:var(--acento-2)">
+    <div class="sec-cab">
+      <div>
+        <p class="sec-num">06 · Para saber más</p>
+        <h2>Fuentes y lecturas <span class="fecha" id="fuentes-fecha">(actualizado el 8 nov. 2026)</span></h2>
+        <p class="sec-desc">Los cuadernos y dossieres se apoyan en investigación publicada. Aquí están las fuentes, ordenadas por los temas del relato de San Blas, con dónde se usa cada una. Casi todas se pueden leer gratis en internet.</p>
+      </div>
+    </div>
+    <ul class="filtros" id="fuentes-filtros" aria-label="Filtrar por nivel">
+      <li><button type="button" data-nivel="" aria-pressed="true">Todas</button></li>
+      <li><button type="button" data-nivel="primaria" aria-pressed="false">Primaria</button></li>
+      <li><button type="button" data-nivel="eso" aria-pressed="false">ESO</button></li>
+      <li><button type="button" data-nivel="bachillerato" aria-pressed="false">Bachillerato</button></li>
+      <li><button type="button" data-nivel="profesorado" aria-pressed="false">Profesorado</button></li>
+    </ul>
+    <div id="fuentes-lista">
+      <noscript><p class="sin-resultados">Activen JavaScript para ver el listado de fuentes, o consulten el archivo <a href="fuentes.js">fuentes.js</a>.</p></noscript>
+    </div>
+  </section>
+
   <aside class="invita" aria-labelledby="t-invita">
     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H5.2L4 17.2V4z"/><path d="M8 9h8M8 12h5"/></svg>
     <div>
@@ -409,5 +451,48 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
   </div>
 </footer>
 
+<script src="fuentes.js"></script>
+<script>
+(function(){
+  var datos = window.FUENTES; if(!datos) return;
+  var lista = document.getElementById('fuentes-lista');
+  var fecha = document.getElementById('fuentes-fecha');
+  var NIVELES = {primaria:'Primaria', eso:'ESO', bachillerato:'Bachillerato', profesorado:'Profesorado'};
+  var ACCESO = {abierto:['Acceso abierto',''], 'suscripción':['Pide suscripción','cerrado'], papel:['En papel','aviso']};
+  if(fecha) fecha.textContent = '(actualizado el ' + datos.actualizado + ')';
+  function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt) e.textContent=txt; return e; }
+  function pintar(nivel){
+    lista.textContent=''; var total=0;
+    datos.bloques.forEach(function(b, i){
+      var fs = b.fuentes.filter(function(f){ return !nivel || f.niveles.indexOf(nivel) > -1; });
+      if(!fs.length) return; total += fs.length;
+      var d = el('details','bloque-fuentes'); if(i===0 || nivel) d.open = true;
+      var s = el('summary', null, b.titulo); s.appendChild(el('small', null, fs.length + (fs.length===1?' fuente':' fuentes'))); d.appendChild(s);
+      var ul = el('ul','lista-fuentes');
+      fs.forEach(function(f){
+        var li = el('li'), p = el('p','cita');
+        if(f.url){ var a = el('a', null, f.cita); a.href = f.url; if(/^https?:/.test(f.url)){ a.rel='noopener'; } p.appendChild(a); } else { p.textContent = f.cita; }
+        li.appendChild(p);
+        if(f.uso) li.appendChild(el('p','uso', f.uso + (f.nota ? '. ' + f.nota : '')));
+        else if(f.nota) li.appendChild(el('p','uso', f.nota));
+        var m = el('p','meta'), ac = ACCESO[f.acceso] || ACCESO.abierto;
+        m.appendChild(el('span','chip' + (ac[1] ? ' ' + ac[1] : ''), ac[0]));
+        f.niveles.forEach(function(n){ m.appendChild(el('span','chip', NIVELES[n] || n)); });
+        li.appendChild(m); ul.appendChild(li);
+      });
+      d.appendChild(ul); lista.appendChild(d);
+    });
+    if(!total) lista.appendChild(el('p','sin-resultados','No hay fuentes para este nivel todavía.'));
+  }
+  var botones = document.querySelectorAll('#fuentes-filtros button');
+  Array.prototype.forEach.call(botones, function(b){
+    b.addEventListener('click', function(){
+      Array.prototype.forEach.call(botones, function(x){ x.setAttribute('aria-pressed', x===b ? 'true' : 'false'); });
+      pintar(b.getAttribute('data-nivel'));
+    });
+  });
+  pintar('');
+})();
+</script>
 </body>
 </html>
