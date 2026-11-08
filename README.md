@@ -34,6 +34,9 @@ Cuadernos para trabajar en el aula antes y después de la visita, para cuatro ni
 ### Catálogo vivo en iNaturalist
 - [Proyecto San Blas Reserva Ambiental en iNaturalist](https://www.inaturalist.org/projects/san-blas-reserva-ambiental): catálogo vivo de los seres vivos observados en la Reserva. Para colaborar basta con tener una cuenta en iNaturalist y subir observaciones con ubicación GPS: las que están dentro de los más de 500.000 m² de la Reserva se suman al proyecto automáticamente.
 
+### Fuentes y lecturas
+- [Fuentes y lecturas](https://sanblasreservaambiental.org/materiales/#fuentes) (actualizado el 8 nov. 2026): investigación publicada en la que se apoyan los cuadernos y dossieres, ordenada por temas y con filtro por nivel. Para añadir una fuente, edita `fuentes.js` y cambia la fecha de «actualizado»; no hace falta tocar `index.html`.
+
 ## Uso
 
 Descarga los materiales desde los enlaces anteriores para imprimir o consultar offline.
