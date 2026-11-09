@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Materiales · San Blas Reserva Ambiental</title>
 <meta name="description" content="Materiales imprimibles y educativos de San Blas Reserva Ambiental: guías de campo, concurso escolar 2026-27, cuadernos didácticos y la galería «Cien años después».">
+<link rel="icon" href="marca/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="marca/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="marca/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -177,6 +180,10 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
   .collage{display:none}
   .invita{flex-direction:column}
 }
+.firma,.pie .firma{display:flex;align-items:center;gap:8px;margin:18px 0 0;font-size:.78rem;letter-spacing:.04em;color:var(--suave)}
+.firma a{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none}
+.firma a:hover,.firma a:focus-visible{color:var(--tinta);text-decoration:underline;text-underline-offset:3px}
+.firma-marca{width:auto;height:22px;flex:none;color:color-mix(in srgb,var(--suave) 65%,var(--fondo))}
 </style>
 </head>
 <body>
@@ -304,7 +311,7 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
       <article class="tarjeta">
         <div class="miniatura hoja"><img src="portada/01-cuaderno-previsita.jpg" alt="" loading="lazy"></div>
         <div class="cuerpo">
-          <h3><a href="cuadernos/01-cuaderno-previsita.pdf">Cuaderno PRE-VISITA</a> <span class="fecha">(actualizado el 8 nov. 2026)</span></h3>
+          <h3><a href="cuadernos/01-cuaderno-previsita.pdf">Cuaderno PRE-VISITA</a> <span class="fecha">(actualizado el 9 nov. 2026)</span></h3>
           <p>Preparar la mirada: agua, paisaje e historia de las medianías del sur antes de llegar a San Blas.</p>
           <p class="meta"><span class="chip">51 págs</span><span class="chip">4 niveles</span></p>
           <div class="acciones">
@@ -316,7 +323,7 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
       <article class="tarjeta">
         <div class="miniatura hoja"><img src="portada/02-cuaderno-postvisita.jpg" alt="" loading="lazy"></div>
         <div class="cuerpo">
-          <h3><a href="cuadernos/02-cuaderno-postvisita.pdf">Cuaderno POST-VISITA</a> <span class="fecha">(actualizado el 4 nov. 2026)</span></h3>
+          <h3><a href="cuadernos/02-cuaderno-postvisita.pdf">Cuaderno POST-VISITA</a> <span class="fecha">(actualizado el 9 nov. 2026)</span></h3>
           <p>Volver sobre lo vivido: debates, crónicas y proyectos para cerrar el aprendizaje en clase.</p>
           <p class="meta"><span class="chip">38 págs</span><span class="chip">4 niveles</span></p>
           <div class="acciones">
@@ -331,7 +338,7 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
       <article class="tarjeta">
         <div class="miniatura hoja"><img src="portada/dossier-B3-senorio-de-canarias.jpg" alt="" loading="lazy"></div>
         <div class="cuerpo">
-          <h3><a href="dossieres/dossier-B3-senorio-de-canarias.pdf">¿Se puede vender una isla que no es tuya?</a> <span class="fecha">(actualizado el 8 nov. 2026)</span></h3>
+          <h3><a href="dossieres/dossier-B3-senorio-de-canarias.pdf">¿Se puede vender una isla que no es tuya?</a> <span class="fecha">(actualizado el 9 nov. 2026)</span></h3>
           <p>El señorío de Canarias y la venta del derecho a conquistar Tenerife (1402–1495): siete fuentes con versión actualizada, comentario guiado y rúbrica. Para el programa B3 e <em>Historia de Canarias</em>; versión ligera para ESO en el cuaderno pre-visita.</p>
           <p class="meta"><span class="chip">13 págs</span><span class="chip">Bachillerato</span><span class="chip">ESO</span></p>
           <div class="acciones">
@@ -448,6 +455,7 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
   <div class="envoltura">
     <p><strong>Uso:</strong> descarguen los materiales desde los enlaces para imprimirlos o consultarlos sin conexión.</p>
     <p>San Blas Reserva Ambiental · San Miguel de Abona, Tenerife. Fotografías históricas: Fotos Antiguas de Canarias (FEDAC, Cabildo de Gran Canaria); recreaciones en color generadas con IA.</p>
+    <p class="firma"><a href="https://gofiodesign.eu" rel="noopener"><svg class="firma-marca" viewBox="0 0 90 193" aria-hidden="true" focusable="false"><path d="M44.98 2.85C101.62 33.87 101.62 158.6 44.98 189.62C-11.66 158.6-11.66 33.87 44.98 2.85Z" fill="none" stroke="currentColor" stroke-width="7"/><path d="M44.98 2.85C44.81 5.94 44.65 9.03 44.5 12.13C43.15 39.95 42.48 67.78 42.48 95.6C42.48 123.43 43.15 151.25 44.5 179.08C44.65 182.17 44.81 185.26 44.98 188.35C45.15 185.26 45.3 182.17 45.45 179.08C46.8 151.25 47.48 123.43 47.48 95.6C47.48 67.78 46.8 39.95 45.45 12.13C45.3 9.03 45.14 5.94 44.98 2.85Z" fill="currentColor"/><circle cx="32.2" cy="96.6" r="8" fill="currentColor"/></svg><span>Diseño: Gofio Design</span></a></p>
   </div>
 </footer>
 
