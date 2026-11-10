@@ -35,7 +35,19 @@
       hoy.src = d.hoy.src;
       hoy.alt = d.titulo + ' hoy (' + (d.hoy.anio || HOY) + ')' + (d.hoy.nota ? '. ' + d.hoy.nota : '');
       hoy.hidden = false;
-      if (d.hoy.autoria) n.querySelector('.t-meta').textContent += ' · Foto actual: ' + d.hoy.autoria;
+      if (d.hoy.autoria) {
+        var meta = n.querySelector('.t-meta');
+        meta.appendChild(document.createTextNode(' · Foto actual: '));
+        if (d.hoy.enlace) {
+          var a = document.createElement('a');
+          a.href = d.hoy.enlace;
+          a.rel = 'noopener';
+          a.textContent = d.hoy.autoria;
+          meta.appendChild(a);
+        } else {
+          meta.appendChild(document.createTextNode(d.hoy.autoria));
+        }
+      }
     } else {
       pend.hidden = false;
     }
