@@ -18,11 +18,11 @@ https://sanblasreservaambiental.org/materiales/
 
 ### Cuadernos didácticos 2026-27
 Cuadernos para trabajar en el aula antes y después de la visita, para cuatro niveles: Primaria (3º-4º y 5º-6º), ESO, y Bachillerato y FP.
-- [Cuaderno PRE-VISITA (PDF)](https://sanblasreservaambiental.org/materiales/cuadernos/01-cuaderno-previsita.pdf) (actualizado el 9 nov. 2026) · [Word editable](https://sanblasreservaambiental.org/materiales/cuadernos/01-cuaderno-previsita.docx)
-- [Cuaderno POST-VISITA (PDF)](https://sanblasreservaambiental.org/materiales/cuadernos/02-cuaderno-postvisita.pdf) (actualizado el 9 nov. 2026) · [Word editable](https://sanblasreservaambiental.org/materiales/cuadernos/02-cuaderno-postvisita.docx)
+- [Cuaderno PRE-VISITA (PDF)](https://sanblasreservaambiental.org/materiales/cuadernos/01-cuaderno-previsita.pdf) (actualizado el 10 nov. 2026) · [Word editable](https://sanblasreservaambiental.org/materiales/cuadernos/01-cuaderno-previsita.docx)
+- [Cuaderno POST-VISITA (PDF)](https://sanblasreservaambiental.org/materiales/cuadernos/02-cuaderno-postvisita.pdf) (actualizado el 10 nov. 2026) · [Word editable](https://sanblasreservaambiental.org/materiales/cuadernos/02-cuaderno-postvisita.docx)
 
 ### Dossieres de fuentes
-- [Dossier B3 · ¿Se puede vender una isla que no es tuya? El señorío de Canarias (1402–1495) (PDF)](https://sanblasreservaambiental.org/materiales/dossieres/dossier-B3-senorio-de-canarias.pdf) (actualizado el 9 nov. 2026) · [Word editable](https://sanblasreservaambiental.org/materiales/dossieres/dossier-B3-senorio-de-canarias.docx)
+- [Dossier B3 · ¿Se puede vender una isla que no es tuya? El señorío de Canarias (1402–1495) (PDF)](https://sanblasreservaambiental.org/materiales/dossieres/dossier-B3-senorio-de-canarias.pdf) (actualizado el 10 nov. 2026) · [Word editable](https://sanblasreservaambiental.org/materiales/dossieres/dossier-B3-senorio-de-canarias.docx)
 
 [Histórico de versiones de cuadernos y dossieres](https://sanblasreservaambiental.org/materiales/historico.html)
 
@@ -38,7 +38,7 @@ Cuadernos para trabajar en el aula antes y después de la visita, para cuatro ni
 - [Fuentes y lecturas](https://sanblasreservaambiental.org/materiales/#fuentes) (actualizado el 8 nov. 2026): investigación publicada en la que se apoyan los cuadernos y dossieres, ordenada por temas y con filtro por nivel. Para añadir una fuente, edita `fuentes.js` y cambia la fecha de «actualizado»; no hace falta tocar `index.html`.
 
 ### Marca de diseño
-- `marca/` guarda el símbolo de Gofio Design: `favicon.svg` (con `favicon-32.png` y `apple-touch-icon.png`) y `gd-relieve.svg`, la versión tono sobre tono. En la web aparece pequeño en el pie y, en los cuadernos y dossieres, junto al número de página.
+- `marca/` guarda el símbolo de Gofio Design: `favicon.svg` (con `favicon-32.png` y `apple-touch-icon.png`) y `gd-relieve.svg`, la versión tono sobre tono. Se usa con mucha discreción: en la web, solo el símbolo, de 14 px y casi tono sobre tono, en la esquina del pie y enlazado a gofiodesign.eu; en los cuadernos y dossieres, a 7 pt y en un tono muy claro junto al número de página.
 
 ## Uso
 

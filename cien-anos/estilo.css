@@ -50,8 +50,8 @@ input[type=range]{width:100%;accent-color:var(--acento);min-height:28px}
 .participa{margin:40px auto;padding-top:8px}
 .participa h2{font-size:1.5rem;margin:0 0 6px}
 .pie{border-top:1px solid var(--linea);padding-top:16px;padding-bottom:48px;font:.82rem/1.5 system-ui,sans-serif;color:var(--suave)}
-.firma,.pie .firma{display:flex;align-items:center;gap:8px;margin:18px 0 0;font-size:.78rem;letter-spacing:.04em;color:var(--suave)}
-.firma a{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none}
-.firma a:hover,.firma a:focus-visible{color:var(--tinta);text-decoration:underline;text-underline-offset:3px}
-.firma-marca{width:auto;height:22px;flex:none;color:color-mix(in srgb,var(--suave) 65%,var(--fondo))}
+.firma,.pie .firma{display:flex;justify-content:flex-end;margin:12px 0 0;line-height:0}
+.firma a{display:inline-flex;padding:4px;color:color-mix(in srgb,var(--suave) 35%,var(--fondo));transition:color .2s ease}
+.firma a:hover,.firma a:focus-visible{color:var(--suave)}
+.firma-marca{width:auto;height:14px;flex:none}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
