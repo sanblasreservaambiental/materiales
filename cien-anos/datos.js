@@ -18,7 +18,7 @@ window.GALERIA = [
   { id:"002123", titulo:"Bahía de Santa Cruz de Tenerife", fecha:"1925–1930", anio:1927, autoria:"Joaquín González Espinosa", lugar:"Santa Cruz de Tenerife",
     texto:"El puerto, puerta de salida de la fruta y de entrada de los primeros turistas que llegaban en los vapores ingleses.", hoy:null },
   { id:"097506", titulo:"Aviones en el campo de vuelo de Gando", fecha:"1920–1930", anio:1926, autoria:"Sin identificar", lugar:"Telde, Gran Canaria",
-    texto:"Los primeros aviones en Gando. En julio de 1936, desde Gran Canaria despegó el Dragon Rapide que llevó a Franco a Marruecos; Gando fue después campo de concentración.", hoy:null },
+    texto:"Los primeros aviones en Gando. En julio de 1936, desde Gran Canaria despegó el Dragon Rapide que llevó a Franco a Marruecos; Gando fue después campo de concentración.", hoy:{ src:"img/097506-hoy.jpg", anio:2026, autoria:"wyspykanaryjskie.info", enlace:"https://wyspykanaryjskie.info/smiertelny-wypadek-pracownika-handlingu-lotnisko-gran-canaria/", nota:"Plataforma del aeropuerto de Gran Canaria, en Gando: del campo de vuelo de los años veinte a uno de los aeropuertos con más pasajeros de España. Imagen publicada en wyspykanaryjskie.info (11 de enero de 2026)." } },
   { id:"002809", titulo:"Aula del Colegio de los Salesianos", fecha:"1920–1925", anio:1922, autoria:"SEI", lugar:"Las Palmas de Gran Canaria",
     texto:"Una escuela urbana bien dotada, mientras en muchos pueblos del sur no había escuela cerca y la infancia trabajaba desde pequeña.", hoy:null },
   { id:"092290", titulo:"Alumnos de un colegio", fecha:"1920–1930", anio:1925, autoria:"Fotografía Alemana", lugar:"Las Palmas de Gran Canaria",
