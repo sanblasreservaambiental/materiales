@@ -38,7 +38,8 @@ Cuadernos para trabajar en el aula antes y después de la visita, para cuatro ni
 - [Fuentes y lecturas](https://sanblasreservaambiental.org/materiales/#fuentes) (actualizado el 8 nov. 2026): investigación publicada en la que se apoyan los cuadernos y dossieres, ordenada por temas y con filtro por nivel. Para añadir una fuente, edita `fuentes.js` y cambia la fecha de «actualizado»; no hace falta tocar `index.html`.
 
 ### Marca de diseño
-- `marca/` guarda el monograma de Gofio Design sacado de su kit de marca: `favicon.svg` (marrón, crema en modo oscuro) con `favicon-32.png` y `apple-touch-icon.png`, `monograma-relieve-claro.svg` (el de los cuadernos y dossieres) y `monograma-plano-marron.svg`. Se usa con mucha discreción: en la web, solo el monograma, de 14 px y casi tono sobre tono, en la esquina del pie y enlazado a gofiodesign.eu; en los cuadernos y dossieres, en relieve claro a 7 pt junto al número de página.
+- `marca/logo-reserva.png` es el favicon: el logo de San Blas Reserva Ambiental, el mismo archivo que usa la web del dossier (`img/logo-negro.png`), para que las dos webs se vean iguales en la pestaña del navegador.
+- `marca/` guarda también el monograma de Gofio Design sacado de su kit de marca: `monograma-relieve-claro.svg` (el de los cuadernos y dossieres) y `monograma-plano-marron.svg`. Se usa con mucha discreción: en la web, solo el monograma, de 14 px y casi tono sobre tono, en la esquina del pie y enlazado a gofiodesign.eu; en los cuadernos y dossieres, en relieve claro a 7 pt junto al número de página.
 
 ## Uso
 
