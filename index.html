@@ -184,6 +184,16 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
 .firma a{display:inline-flex;padding:4px;color:color-mix(in srgb,var(--suave) 35%,var(--fondo));transition:color .2s ease}
 .firma a:hover,.firma a:focus-visible{color:var(--suave)}
 .firma-marca{width:14px;height:14px;flex:none;fill:currentColor}
+/* Novedades y buzón de errores (mailto, sin formularios ni datos guardados en la web) */
+.contacto{margin:28px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contacto > div{border:1px solid var(--linea);border-radius:var(--radio);padding:18px 20px;background:var(--papel)}
+.contacto h2{font-size:1.1rem;margin:0 0 4px}
+.contacto p{margin:0 0 12px;color:var(--suave);font-size:.94rem}
+.contacto .nota{margin:10px 0 0;font-size:.82rem}
+.contacto .boton{--c:var(--acento)}
+.errata{position:relative;z-index:3;display:inline-block;margin-top:8px;font-size:.82rem;color:var(--suave)}
+.errata:hover,.errata:focus-visible{color:var(--tinta)}
+@media (max-width:760px){.contacto{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -449,6 +459,21 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
     </div>
   </aside>
 
+  <aside class="contacto" aria-label="Novedades y sugerencias">
+    <div>
+      <h2>Reciban las novedades</h2>
+      <p>Les avisamos por correo cuando haya materiales nuevos o versiones actualizadas.</p>
+      <a class="boton" href="mailto:tenerife.ambiental-res@barcelo.com?subject=Abonarme%20a%20novedades%20educativas&amp;body=Quiero%20recibir%20las%20novedades%20educativas%20de%20San%20Blas%20Reserva%20Ambiental.%0A%0ANombre%20(opcional)%3A%20%0ACentro%20(opcional)%3A%20">Apuntarme por correo</a>
+      <p class="nota">Se abre un correo ya escrito: solo tienen que enviarlo. Usaremos su dirección solo para estos avisos; para darse de baja, respondan BAJA.</p>
+    </div>
+    <div>
+      <h2>¿Vieron un error o tienen una idea?</h2>
+      <p>Una errata, un enlace roto, un dato que no cuadra o algo que echan en falta: cuéntennoslo en dos líneas.</p>
+      <a class="boton sec" href="mailto:tenerife.ambiental-res@barcelo.com?subject=Tengo%20una%20sugerencia&amp;body=P%C3%A1gina%20o%20material%3A%20https%3A%2F%2Fsanblasreservaambiental.org%2Fmateriales%2F%0A%0AQu%C3%A9%20vieron%20o%20qu%C3%A9%20proponen%3A%20">Escribir una sugerencia</a>
+      <p class="nota">También pueden escribir a <a href="mailto:tenerife.ambiental-res@barcelo.com">tenerife.ambiental-res@barcelo.com</a>.</p>
+    </div>
+  </aside>
+
 </main>
 
 <footer class="pie">
@@ -500,6 +525,21 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
     });
   });
   pintar('');
+})();
+</script>
+<script>
+/* Enlace «¿Algún error?» en cada tarjeta, con el nombre del material ya puesto en el correo */
+(function(){
+  var M='tenerife.ambiental-res@barcelo.com';
+  Array.prototype.forEach.call(document.querySelectorAll('.tarjeta h3 a'), function(a){
+    var cuerpo = a.closest('.cuerpo'); if(!cuerpo) return;
+    var titulo = a.textContent.trim();
+    var e = document.createElement('a'); e.className='errata';
+    e.href = 'mailto:' + M + '?subject=' + encodeURIComponent('Tengo una sugerencia · ' + titulo) +
+      '&body=' + encodeURIComponent('Material: ' + titulo + '\n' + a.href + '\n\nQué vieron o qué proponen (página, si la saben): ');
+    e.textContent = '¿Algún error en este material?';
+    cuerpo.appendChild(e);
+  });
 })();
 </script>
 </body>
