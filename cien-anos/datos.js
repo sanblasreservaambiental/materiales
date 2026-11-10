@@ -1,6 +1,7 @@
 /* Galería «Cien años después» · San Blas Reserva Ambiental
    Para añadir la foto de hoy de una tarjeta: copie la imagen en img/ y rellene "hoy".
-   Ejemplo: hoy: { src: "img/002123-hoy.jpg", anio: 2026, autoria: "Nombre Apellido", nota: "Misma vista desde ..." } */
+   Ejemplo: hoy: { src: "img/002123-hoy.jpg", anio: 2026, autoria: "Nombre Apellido", nota: "Misma vista desde ..." }
+   Si la foto procede de un medio o web, añada enlace: "https://..." para que el crédito enlace a la fuente. */
 window.GALERIA = [
   { id:"008365", titulo:"Niños aguadores", fecha:"1927", anio:1927, autoria:"E. Fernando Baena", lugar:"Gran Canaria",
     texto:"Niñas y niños llenan latas de metal en un pilar de piedra. Acarrear el agua era tarea de la infancia, sobre todo de las niñas. La tabacalera «La Mascota» regalaba esta imagen a sus clientes.", hoy:null },
@@ -9,7 +10,7 @@ window.GALERIA = [
   { id:"008862", titulo:"Aparceras del tomate", fecha:"1925–1930", anio:1927, autoria:"Teodoro Maisch", lugar:"Gran Canaria",
     texto:"Miles de mujeres y familias campesinas trabajaron como aparceras de los grandes propietarios en el tomate de exportación.", hoy:null },
   { id:"002390", titulo:"Almacén de empaquetado de plátanos", fecha:"1925–1930", anio:1927, autoria:"Adalberto Benítez Tugores", lugar:"Tenerife",
-    texto:"Postal de un almacén de empaquetado. La fruta salía hacia los mercados británicos en barcos de compañías como Elder Dempster, Fyffes o Yeoward.", hoy:null },
+    texto:"Postal de un almacén de empaquetado. La fruta salía hacia los mercados británicos en barcos de compañías como Elder Dempster, Fyffes o Yeoward.", hoy:{ src:"img/002390-hoy.jpg", anio:2016, autoria:"eldiario.es (imagen de archivo)", enlace:"https://www.eldiario.es/canariasahora/lapalmaahora/economia/record-historico-produccion-canarias-escenario_1_3853902.html", nota:"Empaquetado de plátanos en Canarias hoy: misma tarea, ahora con cajas de cartón y cadena de envasado. Imagen publicada en eldiario.es (29 de agosto de 2016)." } },
   { id:"012614", titulo:"Almacén de empaquetado", fecha:"1928", anio:1928, autoria:"Teodoro Maisch", lugar:"Las Palmas de Gran Canaria",
     texto:"Tras la crisis de la cochinilla, el plátano se convirtió en el gran cultivo comercial. Los huacales para empaquetarlo se fabricaban a mano.", hoy:null },
   { id:"097343", titulo:"Almacenes de De La Torre Bros. en el Reino Unido", fecha:"1920–1930", anio:1925, autoria:"Sin identificar", lugar:"Reino Unido",
