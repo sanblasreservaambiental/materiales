@@ -26,5 +26,5 @@ window.GALERIA = [
   { id:"019072", titulo:"Bajo la sombrilla", fecha:"1925–1930", anio:1927, autoria:"Sin identificar", lugar:"Sin datos",
     texto:"Ocio de playa en los años veinte: los primeros pasos de una costumbre que, décadas después, transformaría el sur de Tenerife.", hoy:{ src:"img/019072-hoy.jpg", anio:2026, autoria:"Gofio Design", nota:"Playa de Las Canteras, con La Isleta al fondo (Las Palmas de Gran Canaria). De un grupo bajo una sombrilla a una playa llena. Rostros en primer plano difuminados." } },
   { id:"097550", titulo:"Procesión de la Candelaria", fecha:"1920–1930", anio:1925, autoria:"Sin identificar", lugar:"Sin datos",
-    texto:"Religiosidad popular y fiesta: una de las tradiciones que mejor ha resistido el paso de cien años.", hoy:null }
+    texto:"Religiosidad popular y fiesta: una de las tradiciones que mejor ha resistido el paso de cien años.", hoy:{ src:"img/097550-hoy.jpg", autoria:"valledeguimar.es", enlace:"https://valledeguimar.es/candelaria/indicaciones-a-los-peregrinos-a-la-virgen-de-candelaria/", nota:"Procesión de la Virgen de Candelaria en la plaza de la basílica (Candelaria, Tenerife), rodeada de peregrinos. Rostros difuminados." } }
 ];
