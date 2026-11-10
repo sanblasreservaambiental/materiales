@@ -467,10 +467,13 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
       <p class="nota">Se abre un correo ya escrito: solo tienen que enviarlo. Usaremos su dirección solo para estos avisos; para darse de baja, respondan BAJA.</p>
     </div>
     <div>
-      <h2>¿Viste un error o tienes una sugerencia?</h2>
-      <p>Una errata, un enlace roto, un dato que no cuadra o algo que echas en falta: cuéntanoslo en dos líneas.</p>
-      <a class="boton sec" href="mailto:tenerife.ambiental-res@barcelo.com?subject=Tengo%20una%20sugerencia&amp;body=P%C3%A1gina%20o%20material%3A%20https%3A%2F%2Fsanblasreservaambiental.org%2Fmateriales%2F%0A%0AQu%C3%A9%20vieron%20o%20qu%C3%A9%20proponen%3A%20">Escribir una sugerencia</a>
-      <p class="nota">También puedes escribir a <a href="mailto:tenerife.ambiental-res@barcelo.com">tenerife.ambiental-res@barcelo.com</a>.</p>
+      <h2>He visto un error · Tengo una sugerencia</h2>
+      <p>Una errata, un enlace roto, un dato que no cuadra o algo que falta: con dos líneas basta.</p>
+      <div class="acciones">
+        <a class="boton sec" href="mailto:tenerife.ambiental-res@barcelo.com?subject=He%20visto%20un%20error&amp;body=P%C3%A1gina%20o%20material%3A%20https%3A%2F%2Fsanblasreservaambiental.org%2Fmateriales%2F%0A%0AQu%C3%A9%20he%20visto%3A%20">He visto un error</a>
+        <a class="boton sec" href="mailto:tenerife.ambiental-res@barcelo.com?subject=Tengo%20una%20sugerencia&amp;body=P%C3%A1gina%20o%20material%3A%20https%3A%2F%2Fsanblasreservaambiental.org%2Fmateriales%2F%0A%0AMi%20sugerencia%3A%20">Tengo una sugerencia</a>
+      </div>
+      <p class="nota">Se abre un correo ya preparado para <a href="mailto:tenerife.ambiental-res@barcelo.com">tenerife.ambiental-res@barcelo.com</a>.</p>
     </div>
   </aside>
 
@@ -535,9 +538,9 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
     var cuerpo = a.closest('.cuerpo'); if(!cuerpo) return;
     var titulo = a.textContent.trim();
     var e = document.createElement('a'); e.className='errata';
-    e.href = 'mailto:' + M + '?subject=' + encodeURIComponent('Tengo una sugerencia · ' + titulo) +
-      '&body=' + encodeURIComponent('Material: ' + titulo + '\n' + a.href + '\n\nQué vieron o qué proponen (página, si la saben): ');
-    e.textContent = '¿Algún error en este material?';
+    e.href = 'mailto:' + M + '?subject=' + encodeURIComponent('He visto un error · ' + titulo) +
+      '&body=' + encodeURIComponent('Material: ' + titulo + '\n' + a.href + '\n\nQué he visto (y la página, si la sé): ');
+    e.textContent = 'He visto un error en este material';
     cuerpo.appendChild(e);
   });
 })();
