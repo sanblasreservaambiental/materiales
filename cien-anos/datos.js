@@ -22,7 +22,7 @@ window.GALERIA = [
   { id:"002809", titulo:"Aula del Colegio de los Salesianos", fecha:"1920–1925", anio:1922, autoria:"SEI", lugar:"Las Palmas de Gran Canaria",
     texto:"Una escuela urbana bien dotada, mientras en muchos pueblos del sur no había escuela cerca y la infancia trabajaba desde pequeña.", hoy:null },
   { id:"092290", titulo:"Alumnos de un colegio", fecha:"1920–1930", anio:1925, autoria:"Fotografía Alemana", lugar:"Las Palmas de Gran Canaria",
-    texto:"Niños con uniforme y un balón de cuero. En muchos pueblos se jugaba al fútbol descalzo, con pelotas de trapos amarrados.", hoy:null },
+    texto:"Niños con uniforme y un balón de cuero. En muchos pueblos se jugaba al fútbol descalzo, con pelotas de trapos amarrados.", hoy:{ src:"img/092290-hoy.jpg", autoria:"Salesianos La Cuesta", enlace:"https://lacuesta.salesianos.edu/colegio/blog/un-viaje-inolvidable-por-gran-canaria/", nota:"Alumnado del colegio Salesianos La Cuesta (Tenerife) de excursión en las dunas de Maspalomas (Gran Canaria). Rostros difuminados." } },
   { id:"019072", titulo:"Bajo la sombrilla", fecha:"1925–1930", anio:1927, autoria:"Sin identificar", lugar:"Sin datos",
     texto:"Ocio de playa en los años veinte: los primeros pasos de una costumbre que, décadas después, transformaría el sur de Tenerife.", hoy:{ src:"img/019072-hoy.jpg", anio:2026, autoria:"Gofio Design", nota:"Playa de Las Canteras, con La Isleta al fondo (Las Palmas de Gran Canaria). De un grupo bajo una sombrilla a una playa llena. Rostros en primer plano difuminados." } },
   { id:"097550", titulo:"Procesión de la Candelaria", fecha:"1920–1930", anio:1925, autoria:"Sin identificar", lugar:"Sin datos",
