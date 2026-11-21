@@ -23,6 +23,7 @@ Cuadernos para trabajar en el aula antes y después de la visita, para cuatro ni
 
 ### Dossieres de fuentes
 - [Dossier B3 · ¿Se puede vender una isla que no es tuya? El señorío de Canarias (1402–1495) (PDF)](https://sanblasreservaambiental.org/materiales/dossieres/dossier-B3-senorio-de-canarias.pdf) (actualizado el 10 nov. 2026) · [Word editable](https://sanblasreservaambiental.org/materiales/dossieres/dossier-B3-senorio-de-canarias.docx)
+- [Dossier E2 · ¿Por qué el sol sale en el mar y las nubes se quedan en la isla? El tiempo de Tenerife: alisios, mar de nubes y «gorguera» (PDF)](https://sanblasreservaambiental.org/materiales/dossieres/dossier-E2-tiempo-de-tenerife.pdf) (actualizado el 21 nov. 2026) · [Word editable](https://sanblasreservaambiental.org/materiales/dossieres/dossier-E2-tiempo-de-tenerife.docx)
 
 [Histórico de versiones de cuadernos y dossieres](https://sanblasreservaambiental.org/materiales/historico.html)
 
@@ -35,7 +36,7 @@ Cuadernos para trabajar en el aula antes y después de la visita, para cuatro ni
 - [Proyecto San Blas Reserva Ambiental en iNaturalist](https://www.inaturalist.org/projects/san-blas-reserva-ambiental): catálogo vivo de los seres vivos observados en la Reserva. Para colaborar basta con tener una cuenta en iNaturalist y subir observaciones con ubicación GPS: las que están dentro de los más de 500.000 m² de la Reserva se suman al proyecto automáticamente.
 
 ### Fuentes y lecturas
-- [Fuentes y lecturas](https://sanblasreservaambiental.org/materiales/#fuentes) (actualizado el 8 nov. 2026): investigación publicada en la que se apoyan los cuadernos y dossieres, ordenada por temas y con filtro por nivel. Para añadir una fuente, edita `fuentes.js` y cambia la fecha de «actualizado»; no hace falta tocar `index.html`.
+- [Fuentes y lecturas](https://sanblasreservaambiental.org/materiales/#fuentes) (actualizado el 21 nov. 2026): investigación publicada en la que se apoyan los cuadernos y dossieres, ordenada por temas y con filtro por nivel. Para añadir una fuente, edita `fuentes.js` y cambia la fecha de «actualizado»; no hace falta tocar `index.html`.
 
 ### Marca de diseño
 - `marca/logo-reserva.png` es el favicon: el logo de San Blas Reserva Ambiental, el mismo archivo que usa la web del dossier (`img/logo-negro.png`), para que las dos webs se vean iguales en la pestaña del navegador.
