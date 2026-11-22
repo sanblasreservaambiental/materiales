@@ -11,7 +11,7 @@
      nota    aclaración opcional
 */
 window.FUENTES = {
-  actualizado: "8 nov. 2026",
+  actualizado: "21 nov. 2026",
   bloques: [
     {
       titulo: "El suelo que pisamos: volcanes y barranco",
@@ -28,6 +28,26 @@ window.FUENTES = {
         { cita: "González-García, D. et al. (2022). Pre-eruptive conditions and dynamics recorded in banded pumices from the El Abrigo caldera-forming eruption. Journal of Petrology, 63(3), egac009.",
           url: "https://doi.org/10.1093/petrology/egac009",
           acceso: "suscripción", uso: "Pómez bandeadas y mezcla de magmas", niveles: ["profesorado"] }
+      ]
+    },
+    {
+      titulo: "El tiempo: alisios, mar de nubes y lluvia",
+      fuentes: [
+        { cita: "García de Pedraza, L. (1981). Aspectos meteorológicos de las Islas Canarias. Calendario Meteorológico 1981, 156-172. Instituto Nacional de Meteorología (hoy AEMET).",
+          url: "https://repositorio.aemet.es/bitstream/20.500.11765/684/1/aspectos_cal81.pdf",
+          acceso: "abierto", uso: "Dossier E2: la «gorguera» de nubes alrededor de las islas altas y el foehn a sotavento", niveles: ["bachillerato", "profesorado"] },
+        { cita: "Santana Pérez, L. M. (2020). Un sombrero sobre medianías y bosques: el mar de nubes en Tenerife. Divulgameteo.",
+          url: "https://www.divulgameteo.es/fotos/meteoroteca/Mar-de-nubes-Tenerife.pdf",
+          acceso: "abierto", uso: "Dossier E2: el mar de nubes también en el sur (días cubiertos por estación)", niveles: ["eso", "bachillerato", "profesorado"] },
+        { cita: "Santana Pérez, L. M. y Delgado Izquierdo, A. (2026). Precipitaciones en el periodo 2005 a 2025 en Tenerife. MUNA-29.",
+          url: "",
+          acceso: "papel", uso: "Medias de lluvia norte-sur del Cuaderno PRE-VISITA y del dossier E2", niveles: ["eso", "bachillerato", "profesorado"] },
+        { cita: "Marzol, M. V. y Máyer, P. (2015). El gradiente térmico en las Islas Canarias. En Análisis espacial y representación geográfica, 1755-1764. Universidad de Zaragoza-AGE.",
+          url: "https://accedacris.ulpgc.es/bitstream/10553/121510/1/185_Marzol.pdf",
+          acceso: "abierto", uso: "Dossier E2: la inversión térmica del alisio", niveles: ["bachillerato", "profesorado"] },
+        { cita: "NASA Earth Observatory (2023). Swirly Clouds in the Canaries (vórtices de von Kármán).",
+          url: "https://earthobservatory.nasa.gov/images/151216/swirly-clouds-in-the-canaries",
+          acceso: "abierto", uso: "Dossier E2: estelas de nubes a sotavento de las islas", niveles: ["eso", "bachillerato"] }
       ]
     },
     {
