@@ -121,6 +121,9 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
 @media (prefers-reduced-motion: reduce){.antes-despues .color,.antes-despues .raya{animation:none}}
 .destacada .cuerpo{padding:28px 28px 30px;gap:12px;justify-content:center}
 .destacada h3{font-size:1.6rem}
+.foto-cat{position:relative;min-height:320px;background:#111}
+.foto-cat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.inat-cat{margin-bottom:22px}
 .destacada p{font-size:1.02rem}
 
 /* Ciencia ciudadana · iNaturalist */
@@ -407,6 +410,19 @@ h2{font:650 clamp(1.7rem,4vw,2.3rem)/1.1 var(--serif);margin:0}
         <p class="sec-desc">Entre todas las personas que recorren la Reserva estamos reuniendo un catálogo de los seres vivos que la habitan: plantas, aves, insectos, reptiles, hongos… Cada observación con foto y ubicación suma un dato real para conocer y proteger el barranco.</p>
       </div>
     </div>
+    <article class="destacada tarjeta inat-cat">
+      <div class="foto-cat" aria-hidden="true">
+        <img src="catalogo/img/cardon.jpg" alt="" loading="lazy">
+      </div>
+      <div class="cuerpo">
+        <h3><a href="catalogo/">Catálogo de especies de San Blas</a></h3>
+        <p>Una ficha por cada planta, ave, insecto o reptil observado en la Reserva y su entorno, con foto, nombre canario, si es endémica (y de qué islas) y su estado de conservación. Un deslizador adapta las fichas al nivel del alumnado, de Primaria a Bachillerato, y un árbol muestra el parentesco entre especies. En español, inglés y alemán.</p>
+        <p class="meta"><span class="chip">82 especies</span><span class="chip">Endemismos</span><span class="chip">Nivel del alumnado</span></p>
+        <div class="acciones">
+          <a class="boton" href="catalogo/">Abrir el catálogo</a>
+        </div>
+      </div>
+    </article>
     <div class="inat">
       <article class="tarjeta">
         <div class="cuerpo">
