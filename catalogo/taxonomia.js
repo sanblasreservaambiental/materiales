@@ -91,6 +91,7 @@ window.TAXONOMIA = {
 "streptopelia decaocto": {"reino": ["Animalia", "animales"], "clase": ["Aves", "aves"], "orden": ["Columbiformes", "palomas y tórtolas"], "familia": ["Columbidae", "palomas y tórtolas"]},
 "sympetrum fonscolombii": {"reino": ["Animalia", "animales"], "clase": ["Insecta", "insectos"], "orden": ["Odonata", "libélulas y caballitos del diablo"], "familia": ["Libellulidae", "libélulas"]},
 "tadorna ferruginea": {"reino": ["Animalia", "animales"], "clase": ["Aves", "aves"], "orden": ["Anseriformes", "patos y afines"], "familia": ["Anatidae", "patos, gansos y cisnes"]},
+"tarentola delalandii": {"reino": ["Animalia", "animales"], "clase": ["Reptilia", "reptiles"], "orden": ["Squamata", "lagartos y serpientes"], "familia": ["Phyllodactylidae", "Filodactílidos"]},
 "trachinus draco": {"reino": ["Animalia", "animales"], "clase": ["Actinopterygii", "peces óseos"], "orden": ["Perciformes", "percas y afines"], "familia": ["Trachinidae", "peces araña"]},
 "typha domingensis": {"reino": ["Plantae", "plantas"], "clase": ["Liliopsida", "monocotiledóneas"], "orden": ["Poales", "gramíneas, juncos y afines"], "familia": ["Typhaceae", "eneas"]},
 "upupa epops": {"reino": ["Animalia", "animales"], "clase": ["Aves", "aves"], "orden": ["Bucerotiformes", "abubillas y cálaos"], "familia": ["Upupidae", "abubillas"]}

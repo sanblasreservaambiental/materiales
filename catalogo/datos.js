@@ -58,6 +58,7 @@ window.ISLAS = {
   "leptochilus cruentatus": "GTC",
   "colletes moricei": "PGTC",
   "camponotus feae": "HGTCFL",
+  "tarentola delalandii": "PT",
   "argyranthemum frutescens": "GTC"  /* Banco de Datos: presencia segura en G, T y C; en el resto, traslocada */
 };
 

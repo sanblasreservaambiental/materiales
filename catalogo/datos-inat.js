@@ -1590,6 +1590,32 @@ window.INAT = {
     "licencia": "cc-by-nc",
     "url": "https://www.inaturalist.org/photos/166004187"
    }
+  },
+  {
+   "taxon_id": 73966,
+   "cientifico": "Tarentola delalandii",
+   "nombre": {
+    "es": "Perenquén canario",
+    "en": "Tenerife Wall Gecko",
+    "de": "Kanarengecko"
+   },
+   "grupo": "reptiles",
+   "observaciones": 0,
+   "investigacion": 0,
+   "observadores": 0,
+   "ultima": "",
+   "proyecto": 0,
+   "estatus": [
+    "endemica-canaria",
+    "vista-reserva"
+   ],
+   "foto": {
+    "src": "img/inat/73966.jpg",
+    "tipo": "foto",
+    "credito": "(c) Pablo Pozo, some rights reserved (CC BY-NC)",
+    "licencia": "cc-by-nc",
+    "url": "https://www.inaturalist.org/photos/537950094"
+   }
   }
  ]
 };
