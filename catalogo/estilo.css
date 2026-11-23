@@ -213,4 +213,4 @@ button.boton{font-family:inherit;border:0;cursor:pointer}
 .firma,.pie .firma{display:flex;justify-content:flex-end;margin:12px 0 0;line-height:0}
 .firma a{display:inline-flex;padding:4px;color:color-mix(in srgb,var(--suave) 35%,var(--fondo));transition:color .2s ease}
 .firma a:hover,.firma a:focus-visible{color:var(--suave)}
-.firma-marca{width:14px;height:14px;flex:none;fill:currentColor}
+.firma img{display:block;width:200px;max-width:100%;height:auto}

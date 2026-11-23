@@ -1,7 +1,7 @@
 /* Generado por herramientas/generar_offline.py — no editar a mano. */
 self.OFFLINE = {
- "version": "23f2308a9ec4",
- "bytes": 5311523,
+ "version": "c128d3a82f18",
+ "bytes": 5345912,
  "archivos": [
   "./",
   "index.html",
@@ -109,6 +109,8 @@ self.OFFLINE = {
   "iconos/icono-192.png",
   "iconos/icono-512.png",
   "iconos/icono-maskable-512.png",
-  "iconos/logo-reserva.png"
+  "iconos/logo-reserva.png",
+  "iconos/un-proyecto-gofio-design-claro.svg",
+  "iconos/un-proyecto-gofio-design-oscuro.svg"
  ]
 };
