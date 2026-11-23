@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo de especies · San Blas Reserva Ambiental</title>
+<meta name="description" content="Catálogo de plantas y aves de San Blas Reserva Ambiental (Tenerife): foto, descripción y usos tradicionales en español, inglés y alemán.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="envoltura">
+    <div>
+      <nav class="idiomas" aria-label="Idioma / Language / Sprache">
+        <button type="button" data-lang="es">ES</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="de">DE</button>
+      </nav>
+      <p class="antetitulo" data-t="antetitulo"></p>
+      <h1 data-t="titulo"></h1>
+      <p class="entradilla" data-t="entradilla"></p>
+      <p class="recuento" id="recuento"></p>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <img class="c1" src="img/cardon.jpg" alt="">
+      <img class="c2" src="img/cernicalo.jpg" alt="">
+      <img class="c3" src="img/magarza.jpg" alt="">
+    </div>
+  </div>
+</header>
+
+<main class="envoltura">
+  <div class="nivel">
+    <div class="nivel-cab">
+      <label for="nivel" data-t="nivel"></label>
+      <output id="nivel-txt" for="nivel"></output>
+    </div>
+    <input type="range" id="nivel" min="1" max="4" step="1" value="2" list="nivel-marcas">
+    <ol class="nivel-marcas" id="nivel-marcas" aria-hidden="true"><li></li><li></li><li></li><li></li></ol>
+    <p class="nivel-ayuda" id="nivel-ayuda"></p>
+  </div>
+
+  <div class="herramientas">
+    <div class="filtros" role="group" id="filtros"></div>
+    <div class="lado">
+    <div class="vista" role="group" id="vista">
+      <button type="button" data-vista="tarjetas"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span data-t="vistaTarjetas"></span></button>
+      <button type="button" data-vista="arbol"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3v18M5 8h6M5 15h6M11 8v-2h8v4h-8zM11 15v-2h8v4h-8z"/></svg><span data-t="vistaArbol"></span></button>
+    </div>
+    <label class="buscar">
+      <span class="vh" data-t="buscar"></span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="buscar" autocomplete="off">
+    </label>
+  </div>
+
+  </div>
+  <div id="rejilla" class="rejilla" aria-live="polite"></div>
+  <div id="arbol-cont" hidden>
+    <p class="arbol-acciones"><button type="button" id="desplegar" data-t="desplegar"></button> · <button type="button" id="plegar" data-t="plegar"></button></p>
+    <ul class="arbol" id="arbol"></ul>
+  </div>
+  <p id="vacio" class="vacio" hidden data-t="vacio"></p>
+
+  <aside class="inat" id="inat">
+    <div>
+      <p class="sec-num" style="--c:var(--hoja)" data-t="inatAnte"></p>
+      <h2 data-t="inatTitulo"></h2>
+      <p data-t="inatTexto"></p>
+      <p class="acciones"><a class="boton" style="--c:var(--hoja)" href="https://www.inaturalist.org/projects/san-blas-reserva-ambiental" target="_blank" rel="noopener" data-t="inatBoton"></a> <button type="button" class="boton sec" id="comprobar" data-t="comprobarBoton"></button></p>
+      <div class="comprobar-res" id="comprobar-res" aria-live="polite" hidden></div>
+    </div>
+  </aside>
+
+  <aside class="invita">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v12H5.2L4 17.2z"/><path d="M8 9h8M8 12h5"/></svg>
+    <div>
+      <h2 data-t="invitaTitulo"></h2>
+      <p data-t="invitaTexto" data-html></p>
+    </div>
+  </aside>
+</main>
+
+<footer class="pie">
+  <div class="envoltura">
+    <p data-t="pie1" data-html></p>
+    <p data-t="pie2"></p>
+  </div>
+</footer>
+
+<dialog id="ficha" class="ficha" aria-labelledby="ficha-nombre">
+  <form method="dialog"><button class="cerrar" aria-label="×" data-t-aria="cerrar">×</button></form>
+  <div class="ficha-foto"><img id="ficha-img" alt=""></div>
+  <div class="ficha-cuerpo">
+    <p class="ficha-grupo" id="ficha-grupo"></p>
+    <h2 id="ficha-nombre"></h2>
+    <p class="cientifico" id="ficha-cientifico"></p>
+    <p class="otros-nombres" id="ficha-otros"></p>
+    <div class="meta" id="ficha-estatus"></div>
+    <p class="islas" id="ficha-islas" hidden></p>
+    <p class="nota-dist" id="ficha-nota" hidden></p>
+    <p class="taxonomia" id="ficha-taxonomia"></p>
+    <h3 data-t="descripcion"></h3>
+    <p id="ficha-desc"></p>
+    <h3 data-t="usos"></h3>
+    <p id="ficha-usos"></p>
+    <p class="credito" id="ficha-credito"></p>
+    <p class="acciones" id="ficha-enlaces"></p>
+  </div>
+</dialog>
+
+<script src="datos.js"></script>
+<script src="datos-inat.js"></script>
+<script src="taxonomia.js"></script>
+<script src="catalogo.js"></script>
+</body>
+</html>
