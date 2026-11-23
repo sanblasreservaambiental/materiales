@@ -9,6 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#2e7d5b">
+<link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
 </head>
 <body>
 
@@ -24,6 +27,7 @@
       <h1 data-t="titulo"></h1>
       <p class="entradilla" data-t="entradilla"></p>
       <p class="recuento" id="recuento"></p>
+      <a class="ir-llevar" href="#llevar" id="ir-llevar" data-t="irLlevar" hidden></a>
     </div>
     <div class="collage" aria-hidden="true">
       <img class="c1" src="img/cardon.jpg" alt="">
@@ -76,6 +80,19 @@
     </div>
   </aside>
 
+  <aside class="llevar" id="llevar" hidden>
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M12 7v7M9 11l3 3 3-3M10 18.5h4"/></svg>
+    <div>
+      <h2 data-t="llevarTitulo"></h2>
+      <p id="llevar-texto"></p>
+      <p class="acciones"><button type="button" class="boton" style="--c:var(--hoja)" id="descargar" data-t="descargarBoton"></button> <button type="button" class="boton sec" id="instalar" data-t="instalarBoton" hidden></button></p>
+      <progress id="llevar-barra" max="1" value="0" hidden></progress>
+      <p class="llevar-estado" id="llevar-estado" aria-live="polite"></p>
+      <p class="llevar-ios" id="llevar-ios" data-t="llevarIos" hidden></p>
+      <p><button type="button" class="enlace" id="quitar" data-t="quitarBoton" hidden></button></p>
+    </div>
+  </aside>
+
   <aside class="invita">
     <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v12H5.2L4 17.2z"/><path d="M8 9h8M8 12h5"/></svg>
     <div>
@@ -116,6 +133,7 @@
 <script src="datos.js"></script>
 <script src="datos-inat.js"></script>
 <script src="taxonomia.js"></script>
+<script src="offline.js"></script>
 <script src="catalogo.js"></script>
 </body>
 </html>
