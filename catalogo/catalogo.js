@@ -23,6 +23,7 @@
       inatAnte: "Catálogo vivo", inatTitulo: "Súmense en iNaturalist",
       inatTexto: "Este catálogo crece con las observaciones del proyecto San Blas Reserva Ambiental en iNaturalist. Basta con una cuenta y subir fotos con ubicación GPS tomadas dentro de la reserva: se añaden al proyecto automáticamente. Las especies sin ficha propia proceden de observaciones de iNaturalist hechas a menos de 750 m de la reserva.",
       inatBoton: "Abrir el proyecto en iNaturalist", comprobarBoton: "Comprobar el proyecto ahora", comprobando: "Consultando iNaturalist…", comprobarError: "No se ha podido consultar iNaturalist. Prueben más tarde.", comprobarRes: (n, d) => `El proyecto tiene ahora ${n} especies. ${d ? `Va ${d} por delante de este catálogo:` : "Este catálogo está al día."}`, comprobarSubidas: n => `${n} ${n === 1 ? "especie del catálogo ya está" : "especies del catálogo ya están"} en el proyecto desde la última actualización:`, comprobarFaltan: n => `Quedan ${n} especies del catálogo sin observar dentro de la reserva. Llevan la etiqueta «Aún no está en el proyecto».`,
+      irLlevar: "↓ Llévenselo al móvil para usarlo sin conexión", llevarTitulo: "Llévense el catálogo en el móvil", llevarTexto: mb => `Descarguen todas las fichas, con sus fotos y en los tres idiomas (español, inglés y alemán), para consultarlas durante la visita aunque no haya cobertura. Ocupa unos ${mb} MB: mejor hacerlo con wifi.`, descargarBoton: "Descargar para usar sin conexión", descargando: (n, t) => `Descargando… ${n} de ${t} archivos`, descargado: "Listo: el catálogo ya funciona sin conexión en este móvil, en los tres idiomas. Ábranlo desde esta misma dirección o desde la pantalla de inicio.", descargaError: "No se ha podido completar la descarga. Comprueben la conexión y vuelvan a intentarlo.", instalarBoton: "Añadir a la pantalla de inicio", llevarIos: "En iPhone o iPad: pulsen el botón Compartir y luego «Añadir a pantalla de inicio» para abrirlo como una aplicación.", quitarBoton: "Quitar la descarga de este móvil", quitado: "Se ha quitado la descarga. El catálogo sigue disponible con conexión.",
       invitaTitulo: "¿Conocen otro uso o un nombre tradicional?",
       invitaTexto: "Si en su familia o en su centro conocen otro nombre canario o un uso tradicional de alguna de estas especies, escríbannos a <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> y lo añadiremos citando la fuente.",
       pie1: "Más recursos para el aula en <a href=\"https://sanblasreservaambiental.org/materiales/\">Materiales de San Blas</a>.",
@@ -51,6 +52,7 @@
       inatAnte: "Living catalogue", inatTitulo: "Join us on iNaturalist",
       inatTexto: "This catalogue grows with the observations of the San Blas Reserva Ambiental project on iNaturalist. All you need is an account: upload GPS-tagged photos taken inside the reserve and they are added to the project automatically. Species without a full profile come from iNaturalist observations made within 750 m of the reserve.",
       inatBoton: "Open the project on iNaturalist", comprobarBoton: "Check the project now", comprobando: "Asking iNaturalist…", comprobarError: "iNaturalist could not be reached. Please try later.", comprobarRes: (n, d) => `The project now has ${n} species. ${d ? `It is ${d} ahead of this catalogue:` : "This catalogue is up to date."}`, comprobarSubidas: n => `${n} catalogue ${n === 1 ? "species has" : "species have"} been added to the project since the last update:`, comprobarFaltan: n => `${n} catalogue species have not been recorded inside the reserve yet. They carry the label “Not in the project yet”.`,
+      irLlevar: "↓ Take it on your phone for offline use", llevarTitulo: "Take the catalogue on your phone", llevarTexto: mb => `Download every species card, with photos and in all three languages (Spanish, English and German), to use during your visit even without mobile signal. It takes about ${mb} MB, so Wi-Fi is best.`, descargarBoton: "Download for offline use", descargando: (n, t) => `Downloading… ${n} of ${t} files`, descargado: "Done: the catalogue now works offline on this phone, in all three languages. Open it from this same address or from your home screen.", descargaError: "The download could not be completed. Check your connection and try again.", instalarBoton: "Add to home screen", llevarIos: "On iPhone or iPad: tap the Share button, then “Add to Home Screen” to open it like an app.", quitarBoton: "Remove the download from this phone", quitado: "The download has been removed. The catalogue is still available online.",
       invitaTitulo: "Do you know another use or a traditional name?",
       invitaTexto: "If you know another Canarian name or a traditional use for any of these species, write to us at <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> and we will add it, citing the source.",
       pie1: "More classroom resources at <a href=\"https://sanblasreservaambiental.org/materiales/\">San Blas materials</a> (in Spanish).",
@@ -79,6 +81,7 @@
       inatAnte: "Lebendiger Katalog", inatTitulo: "Machen Sie mit bei iNaturalist",
       inatTexto: "Dieser Katalog wächst mit den Beobachtungen des Projekts San Blas Reserva Ambiental auf iNaturalist. Sie brauchen nur ein Konto: Laden Sie Fotos mit GPS-Daten aus dem Reservat hoch, und sie werden automatisch dem Projekt zugeordnet. Arten ohne eigenes Porträt stammen aus iNaturalist-Beobachtungen im Umkreis von 750 m um das Reservat.",
       inatBoton: "Projekt auf iNaturalist öffnen", comprobarBoton: "Projekt jetzt prüfen", comprobando: "iNaturalist wird abgefragt…", comprobarError: "iNaturalist ist nicht erreichbar. Bitte später erneut versuchen.", comprobarRes: (n, d) => `Das Projekt hat jetzt ${n} Arten. ${d ? `Es ist diesem Katalog ${d} voraus:` : "Der Katalog ist aktuell."}`, comprobarSubidas: n => `${n} Katalogarten sind seit der letzten Aktualisierung ins Projekt gekommen:`, comprobarFaltan: n => `${n} Katalogarten wurden im Reservat noch nicht beobachtet. Sie tragen das Etikett „Noch nicht im Projekt“.`,
+      irLlevar: "↓ Aufs Handy laden und offline nutzen", llevarTitulo: "Den Katalog aufs Handy mitnehmen", llevarTexto: mb => `Laden Sie alle Artensteckbriefe mit Fotos und in allen drei Sprachen (Spanisch, Englisch, Deutsch) herunter, um sie beim Besuch auch ohne Netz zu nutzen. Etwa ${mb} MB, am besten über WLAN.`, descargarBoton: "Für die Offline-Nutzung herunterladen", descargando: (n, t) => `Wird geladen… ${n} von ${t} Dateien`, descargado: "Fertig: Der Katalog funktioniert jetzt auf diesem Handy offline, in allen drei Sprachen. Öffnen Sie ihn über dieselbe Adresse oder vom Startbildschirm.", descargaError: "Der Download konnte nicht abgeschlossen werden. Bitte Verbindung prüfen und erneut versuchen.", instalarBoton: "Zum Startbildschirm hinzufügen", llevarIos: "Auf iPhone oder iPad: Teilen-Taste antippen und dann „Zum Home-Bildschirm“ wählen, um ihn wie eine App zu öffnen.", quitarBoton: "Download von diesem Handy entfernen", quitado: "Der Download wurde entfernt. Online ist der Katalog weiterhin verfügbar.",
       invitaTitulo: "Kennen Sie eine andere Nutzung oder einen traditionellen Namen?",
       invitaTexto: "Wenn Sie einen weiteren kanarischen Namen oder eine traditionelle Nutzung einer dieser Arten kennen, schreiben Sie uns an <a href=\"mailto:tenerife.ambiental-res@barcelo.com\">tenerife.ambiental-res@barcelo.com</a> – wir ergänzen sie mit Quellenangabe.",
       pie1: "Weitere Unterrichtsmaterialien unter <a href=\"https://sanblasreservaambiental.org/materiales/\">Materialien San Blas</a> (auf Spanisch).",
@@ -157,7 +160,10 @@
     $("#buscar").placeholder = T[lang].buscarPh;
     $("#recuento").textContent = T[lang].recuento(especies.length);
     document.title = T[lang].titulo + " · San Blas Reserva Ambiental";
+    if (self.OFFLINE) $("#llevar-texto").textContent = T[lang].llevarTexto(Math.ceil(self.OFFLINE.bytes / 1e6));
+    if (llevarEstado) $("#llevar-estado").textContent = T[lang][llevarEstado] || "";
   }
+  var llevarEstado = "";
 
   /* Nivel del alumnado: 1 reinos · 2 grupos · 3 clases y órdenes · 4 familias */
   const TAX = window.TAXONOMIA || {};
@@ -450,6 +456,58 @@
     }
     b.disabled = false;
   };
+
+  // Descarga para usar sin conexión (sw.js + offline.js). Solo se descarga
+  // todo cuando se pulsa el botón, para no gastar datos a quien no lo quiere.
+  if ("serviceWorker" in navigator && "caches" in window && self.OFFLINE && window.isSecureContext) {
+    const CACHE = "catalogo-sanblas-" + self.OFFLINE.version;
+    const bD = $("#descargar"), bQ = $("#quitar"), barra = $("#llevar-barra"), est = $("#llevar-estado");
+    const ponEstado = (k, txt) => { llevarEstado = k; est.textContent = txt || T[lang][k] || ""; };
+    $("#llevar").hidden = false; $("#ir-llevar").hidden = false;
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+    const yaDescargado = async () => (await caches.keys()).some(k => k.startsWith("catalogo-sanblas-") && k !== "catalogo-sanblas-fuentes");
+    const mostrar = async () => {
+      const si = await yaDescargado();
+      bD.hidden = si; bQ.hidden = !si;
+      if (si && !llevarEstado) ponEstado("descargado");
+    };
+    mostrar();
+    bD.onclick = async () => {
+      const lista = self.OFFLINE.archivos;
+      bD.disabled = true; barra.hidden = false; barra.max = lista.length; barra.value = 0;
+      try {
+        if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
+        const c = await caches.open(CACHE);
+        let n = 0;
+        const cola = lista.slice();
+        const trabajador = async () => {
+          while (cola.length) {
+            const a = cola.shift();
+            const r = await fetch(new Request(a, { cache: "reload" }));
+            if (!r.ok) throw new Error(a);
+            await c.put(a, r);
+            n++; barra.value = n; ponEstado("", T[lang].descargando(n, lista.length));
+          }
+        };
+        await Promise.all([1, 2, 3, 4].map(trabajador));
+        ponEstado("descargado");
+      } catch (err) {
+        await caches.delete(CACHE);
+        ponEstado("descargaError");
+      }
+      barra.hidden = true; bD.disabled = false; mostrar();
+    };
+    bQ.onclick = async () => {
+      for (const k of await caches.keys()) if (k.startsWith("catalogo-sanblas-")) await caches.delete(k);
+      ponEstado("quitado"); mostrar();
+    };
+    let aviso = null;
+    window.addEventListener("beforeinstallprompt", ev => { ev.preventDefault(); aviso = ev; $("#instalar").hidden = false; });
+    $("#instalar").onclick = async () => { if (!aviso) return; aviso.prompt(); await aviso.userChoice; aviso = null; $("#instalar").hidden = true; };
+    const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    const app = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
+    $("#llevar-ios").hidden = !(ios && !app);
+  }
 
   const inicial = especies.find(x => "#" + x.id === location.hash);
   if (inicial) abrir(inicial);

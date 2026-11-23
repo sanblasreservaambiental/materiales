@@ -169,6 +169,7 @@ h1{font:650 clamp(2.3rem,6.5vw,4rem)/1.02 var(--serif);margin:0 0 16px;letter-sp
 .cerrar{margin:10px;width:40px;height:40px;border-radius:50%;border:1px solid var(--linea);background:var(--papel);color:var(--tinta);font-size:1.5rem;line-height:1;cursor:pointer;z-index:3}
 .acciones{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px !important}
 .boton{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:.92rem;padding:9px 14px;border-radius:10px;background:var(--c,var(--acento));color:var(--sobre-c)}
+button.boton{font-family:inherit;border:0;cursor:pointer}
 .boton.sec{background:transparent;color:var(--tinta);border:1px solid var(--linea)}
 
 /* iNaturalist e invitación */
@@ -180,6 +181,13 @@ h1{font:650 clamp(2.3rem,6.5vw,4rem)/1.02 var(--serif);margin:0 0 16px;letter-sp
 .invita{margin:24px 0 0;display:flex;gap:18px;align-items:flex-start;background:color-mix(in srgb,var(--acento-2) 12%,var(--papel));
   border:1px solid color-mix(in srgb,var(--acento-2) 35%,var(--linea));border-radius:var(--radio);padding:22px 24px}
 .invita svg{flex:none;color:var(--acento-2)}
+.llevar{margin:24px 0 0;display:flex;gap:18px;align-items:flex-start;background:color-mix(in srgb,var(--hoja) 10%,var(--papel));border:1px solid color-mix(in srgb,var(--hoja) 35%,var(--linea));border-radius:var(--radio);padding:24px 26px}
+.llevar svg{flex:none;color:var(--hoja)}
+.llevar h2{font:650 1.5rem/1.15 var(--serif);margin:0 0 8px}
+.llevar p{margin:0 0 10px;color:var(--suave);max-width:70ch}
+.llevar progress{width:100%;max-width:420px;accent-color:var(--hoja);margin:4px 0 8px}
+.llevar-estado{font-weight:600;color:var(--tinta)!important}
+.llevar .enlace{background:none;border:0;padding:0;color:var(--suave);text-decoration:underline;font:inherit;font-size:.88rem;cursor:pointer}
 .invita p{margin:0;color:var(--suave)}
 .pie{margin-top:48px;border-top:1px solid var(--linea);padding:24px 0 40px;color:var(--suave);font-size:.92rem}
 .pie p{margin:0 0 6px}
@@ -199,3 +207,5 @@ h1{font:650 clamp(2.3rem,6.5vw,4rem)/1.02 var(--serif);margin:0 0 16px;letter-sp
 .chip.sin-proyecto{background:transparent;border:1px dashed var(--hoja);color:var(--hoja)}
 .comprobar-res{margin-top:14px;padding:12px 14px;border-radius:10px;background:var(--papel);font-size:.95rem}
 .comprobar-res ul{margin:6px 0 10px;padding-left:20px}
+
+.ir-llevar{display:inline-block;margin-top:10px;font-weight:700;color:var(--hoja)}
