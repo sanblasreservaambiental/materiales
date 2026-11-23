@@ -1,7 +1,7 @@
 /* Generado por herramientas/generar_offline.py — no editar a mano. */
 self.OFFLINE = {
- "version": "578583284301",
- "bytes": 5901505,
+ "version": "a7f5f66cfd4a",
+ "bytes": 5218704,
  "archivos": [
   "./",
   "index.html",
@@ -107,6 +107,7 @@ self.OFFLINE = {
   "iconos/apple-touch-icon.png",
   "iconos/icono-192.png",
   "iconos/icono-512.png",
-  "iconos/icono-maskable-512.png"
+  "iconos/icono-maskable-512.png",
+  "iconos/logo-reserva.png"
  ]
 };
