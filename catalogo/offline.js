@@ -1,7 +1,7 @@
 /* Generado por herramientas/generar_offline.py — no editar a mano. */
 self.OFFLINE = {
- "version": "007691f5af19",
- "bytes": 5311530,
+ "version": "23f2308a9ec4",
+ "bytes": 5311523,
  "archivos": [
   "./",
   "index.html",
