@@ -1,7 +1,7 @@
 /* Generado por herramientas/generar_offline.py — no editar a mano. */
 self.OFFLINE = {
- "version": "578583284301",
- "bytes": 5901505,
+ "version": "007691f5af19",
+ "bytes": 5311530,
  "archivos": [
   "./",
   "index.html",
@@ -94,6 +94,7 @@ self.OFFLINE = {
   "img/inat/71191.jpg",
   "img/inat/712363.jpeg",
   "img/inat/712365.jpg",
+  "img/inat/73966.jpg",
   "img/inat/75771.jpeg",
   "img/inat/76590.jpg",
   "img/inat/77159.jpg",
@@ -107,6 +108,7 @@ self.OFFLINE = {
   "iconos/apple-touch-icon.png",
   "iconos/icono-192.png",
   "iconos/icono-512.png",
-  "iconos/icono-maskable-512.png"
+  "iconos/icono-maskable-512.png",
+  "iconos/logo-reserva.png"
  ]
 };
