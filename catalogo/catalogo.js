@@ -381,7 +381,8 @@
     const d = $("#ficha");
     d.style.setProperty("--c", COLOR[e.grupo] || COLOR.otros);
     const foto = $(".ficha-foto");
-    foto.className = "ficha-foto" + (e.foto && e.foto.tipo === "lamina" ? " lamina" : "");
+    foto.className = "ficha-foto" + (e.foto && e.foto.tipo === "lamina" ? " lamina" : "") + (e.foto && e.foto.src ? "" : " sin");
+    foto.style.setProperty("--foto-fondo", e.foto && e.foto.src ? `url("${e.foto.src}")` : "none");
     const im = $("#ficha-img");
     if (e.foto && e.foto.src) { im.src = e.foto.src; im.alt = nombre(e); im.hidden = false; } else { im.removeAttribute("src"); im.alt = ""; im.hidden = true; }
     $("#ficha-grupo").textContent = tr(GRUPOS[e.grupo]);

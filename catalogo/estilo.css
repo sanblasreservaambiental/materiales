@@ -157,11 +157,17 @@ h1{font:650 clamp(2.3rem,6.5vw,4rem)/1.02 var(--serif);margin:0 0 16px;letter-sp
 .ficha::backdrop{background:rgba(28,25,21,.6)}
 .ficha[open]{display:block;position:fixed}
 .ficha form{position:sticky;top:0;height:0;z-index:3;display:flex;justify-content:flex-end}
-.ficha-foto{position:relative;overflow:hidden}
-.ficha-foto{background:#fff;height:clamp(220px,46vw,380px)}
-.ficha-foto img{width:100%;height:100%;object-fit:cover;display:block}
+/* La foto de la ficha se ve entera (antes se recortaba con object-fit:cover y
+   en el móvil cortaba al ser vivo). Los huecos se rellenan con la misma foto
+   desenfocada. */
+.ficha-foto{position:relative;overflow:hidden;background:color-mix(in srgb,var(--c) 14%,var(--papel))}
+.ficha-foto::before{content:"";position:absolute;inset:-30px;background:var(--foto-fondo,none) center/cover;filter:blur(22px) saturate(1.1);opacity:.55}
+.ficha-foto img{position:relative;width:100%;height:auto;max-height:min(64vh,480px);object-fit:contain;display:block}
 .ficha-foto img[hidden]{display:none}
-.ficha-foto.lamina img{object-fit:contain;padding:16px}
+.ficha-foto.sin{height:96px}
+.ficha-foto.lamina{background:#fff}
+.ficha-foto.lamina::before{display:none}
+.ficha-foto.lamina img{padding:16px}
 .ficha-cuerpo{padding:28px 28px 24px}
 .ficha-grupo{font:700 .78rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--c);margin:0 0 10px}
 .ficha h2{font:650 clamp(1.7rem,4vw,2.2rem)/1.1 var(--serif);margin:0 0 4px;padding-right:36px}
@@ -278,7 +284,6 @@ button.boton{font-family:inherit;border:0;cursor:pointer}
   .hojas{margin-left:0}
   /* Ficha casi a pantalla completa */
   .ficha{width:calc(100vw - 16px);max-height:calc(100vh - 16px);max-height:calc(100dvh - 16px)}
-  .ficha-foto{height:clamp(200px,58vw,320px)}
   .llevar,.inat{padding:20px 18px}
   .llevar{flex-direction:column}
 }
