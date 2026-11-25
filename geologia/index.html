@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de geología · San Blas Reserva Ambiental</title>
+<meta name="description" content="Guía de geología de San Blas Reserva Ambiental (Tenerife): la ignimbrita de El Abrigo, la pómez, el basalto, el barranco y la costa, explicados para cada nivel del alumnado y con sus fuentes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<link rel="icon" href="iconos/logo-reserva.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#b5562b">
+<link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="envoltura">
+    <div>
+      <p class="antetitulo">San Blas Reserva Ambiental · Tenerife</p>
+      <h1>Guía de geología</h1>
+      <p class="entradilla">Hace unos 170.000 años, una nube ardiente bajó desde Las Cañadas hasta el mar y dejó en el barranco la roca que hoy pisamos. Aprendan a leer sus paredes capa a capa: rocas, formas del relieve, costa y la huella de las personas.</p>
+      <p class="recuento" id="recuento"></p>
+      <a class="ir-llevar" href="#llevar" id="ir-llevar" hidden>↓ Llévensela al móvil para usarla sin conexión</a>
+    </div>
+    <div class="portada-dibujo" id="portada-dibujo" aria-hidden="true"></div>
+  </div>
+</header>
+
+<main class="envoltura">
+  <div class="nivel">
+    <div class="nivel-cab">
+      <label for="nivel">Nivel del alumnado</label>
+      <output id="nivel-txt" for="nivel"></output>
+    </div>
+    <input type="range" id="nivel" min="1" max="4" step="1" value="2">
+    <ol class="nivel-marcas" id="nivel-marcas" aria-hidden="true"><li></li><li></li><li></li><li></li></ol>
+    <p class="nivel-ayuda" id="nivel-ayuda"></p>
+  </div>
+
+  <section class="columna-sec" aria-labelledby="columna-tit">
+    <div class="columna-texto">
+      <p class="sec-num" style="--c:var(--acento)">La pared junto a la reserva</p>
+      <h2 id="columna-tit">Capa a capa, de abajo arriba</h2>
+      <p id="columna-intro"></p>
+      <p class="fuente-mini">Es la pared del Lugar de Interés Geológico IC4026 (IGME), justo al otro lado de la carretera, junto a la reserva.</p>
+    </div>
+    <figure class="columna" id="columna"></figure>
+  </section>
+
+  <div class="herramientas">
+    <div class="filtros" role="group" aria-label="Temas" id="filtros"></div>
+    <label class="buscar">
+      <span class="vh">Buscar en la guía</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="buscar" autocomplete="off" placeholder="Busquen: pómez, basalto, barranco…">
+    </label>
+  </div>
+
+  <div id="rejilla" class="rejilla" aria-live="polite"></div>
+  <p id="vacio" class="vacio" hidden>No encontramos nada con ese nombre en este nivel.</p>
+
+  <section class="fuentes" id="fuentes" aria-labelledby="fuentes-tit">
+    <p class="sec-num" style="--c:var(--acento-2)">Para saber más</p>
+    <h2 id="fuentes-tit">Fuentes</h2>
+    <p>Cada ficha indica de dónde sale cada dato. Si encuentran un error, escríbannos y lo corregiremos.</p>
+    <ol id="lista-fuentes"></ol>
+  </section>
+
+  <aside class="llevar" id="llevar" hidden>
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M12 7v7M9 11l3 3 3-3M10 18.5h4"/></svg>
+    <div>
+      <h2>Llévense la guía en el móvil</h2>
+      <p id="llevar-texto"></p>
+      <p class="acciones"><button type="button" class="boton" style="--c:var(--hoja)" id="descargar">Descargar para usar sin conexión</button> <button type="button" class="boton sec" id="instalar" hidden>Añadir a la pantalla de inicio</button></p>
+      <progress id="llevar-barra" max="1" value="0" hidden></progress>
+      <p class="llevar-estado" id="llevar-estado" aria-live="polite"></p>
+      <p class="llevar-ios" id="llevar-ios" hidden>En iPhone o iPad: pulsen el botón Compartir de Safari y luego «Añadir a pantalla de inicio».</p>
+      <p><button type="button" class="enlace" id="quitar" hidden>Borrar la copia del móvil</button></p>
+    </div>
+  </aside>
+
+  <aside class="invita">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v12H5.2L4 17.2z"/><path d="M8 9h8M8 12h5"/></svg>
+    <div>
+      <h2>¿Tienen fotos o una actividad de geología?</h2>
+      <p>Si en su centro han hecho fotos de las rocas del barranco o han preparado una actividad con esta guía, escríbannos a <a href="mailto:tenerife.ambiental-res@barcelo.com">tenerife.ambiental-res@barcelo.com</a> y la compartiremos con el resto del profesorado, citando su autoría.</p>
+    </div>
+  </aside>
+</main>
+
+<footer class="pie">
+  <div class="envoltura">
+    <p>Más recursos para el aula en <a href="../">Materiales de San Blas</a> y en el <a href="../catalogo/">Catálogo de especies</a>.</p>
+    <p>San Blas Reserva Ambiental · San Miguel de Abona, Tenerife. Las láminas son esquemas didácticos dibujados para esta guía, no a escala.</p>
+    <p class="firma"><a href="https://gofiodesign.eu/" rel="noopener"><picture><source srcset="iconos/un-proyecto-gofio-design-oscuro.svg" media="(prefers-color-scheme: dark)"><img src="iconos/un-proyecto-gofio-design-claro.svg" alt="Un proyecto Gofio Design" width="200" height="51" loading="lazy"></picture></a></p>
+  </div>
+</footer>
+
+<dialog id="ficha" class="ficha" aria-labelledby="ficha-nombre">
+  <form method="dialog"><button class="cerrar" aria-label="Cerrar">×</button></form>
+  <div class="ficha-foto lamina-svg" id="ficha-dibujo"></div>
+  <div class="ficha-cuerpo">
+    <p class="ficha-grupo" id="ficha-grupo"></p>
+    <h2 id="ficha-nombre"></h2>
+    <p class="otros-nombres" id="ficha-otros"></p>
+    <p class="ficha-nivel" id="ficha-nivel"></p>
+    <h3>Qué es</h3>
+    <p id="ficha-texto"></p>
+    <div class="mirar">
+      <h3>En la visita</h3>
+      <p id="ficha-mirar"></p>
+    </div>
+    <h3>Fuentes</h3>
+    <ul class="ficha-fuentes" id="ficha-fuentes"></ul>
+  </div>
+</dialog>
+
+<script src="datos.js"></script>
+<script src="dibujos.js"></script>
+<script src="offline.js"></script>
+<script src="guia.js"></script>
+</body>
+</html>
