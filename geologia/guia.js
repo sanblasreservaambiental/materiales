@@ -92,7 +92,7 @@
     dentro.forEach(f => r.appendChild(tarjeta(f)));
     if (fuera.length) {
       const h = document.createElement("h2"); h.className = "seccion litoral";
-      h.innerHTML = "En el entorno de la reserva<small>La costa y el mar junto a San Blas: fuera de la reserva, pero parte de la misma historia.</small>";
+      h.innerHTML = "En el entorno de la reserva<small>La costa, el mar y la pared del Lugar de Interés Geológico, junto a San Blas: fuera de la reserva, pero parte de la misma historia.</small>";
       r.appendChild(h);
       fuera.forEach(f => r.appendChild(tarjeta(f)));
     }

@@ -50,7 +50,7 @@ window.FICHAS = [
     textos: [
       "Es la piedra clara de las paredes del barranco. Parece tierra apretada, pero es una roca hecha de ceniza y trocitos de piedra que salieron de un volcán hace muchísimo tiempo.",
       "Hace unos 170.000 años, una erupción enorme lanzó una nube ardiente de gas, ceniza y piedras que bajó por la ladera de la isla hasta el mar. Al pararse, todo ese material se quedó en capas y se endureció: así nació la roca que vemos. En el sur de Tenerife la gente la llama «tosca».",
-      "La ignimbrita se forma a partir de un flujo piroclástico: una mezcla muy caliente de gases, ceniza, pómez y fragmentos de roca que corre pegada al suelo. En San Blas aflora la ignimbrita del Miembro El Abrigo, la más moderna de las Bandas del Sur (169.000 ± 1.000 años). En la margen izquierda del barranco su espesor llega a 10-15 metros. Es una roca masiva, sin capas internas claras, y mezcla granos de todos los tamaños.",
+      "La ignimbrita se forma a partir de un flujo piroclástico: una mezcla muy caliente de gases, ceniza, pómez y fragmentos de roca que corre pegada al suelo. En San Blas y su entorno aflora la ignimbrita del Miembro El Abrigo, la más moderna de las Bandas del Sur (169.000 ± 1.000 años). En la pared que hay junto a la reserva, al otro lado de la carretera, su espesor llega a 10-15 metros. Es una roca masiva, sin capas internas claras, y mezcla granos de todos los tamaños.",
       "Depósito de colada piroclástica (ignimbrita) de composición dominantemente fonolítica, con dos unidades deposicionales masivas y ricas en líticos (Sur-A y Sur-C). Comparen su aspecto con el de las ignimbritas soldadas, de textura flameada, que Rodríguez Losada describe en otros barrancos del sur. Las ignimbritas de las Bandas del Sur suelen estar endurecidas por un cemento de zeolitas y carbonatos, presentan erosión alveolar y su espesor cambia mucho porque el flujo se encauzó por barrancos y depresiones. El Miembro El Abrigo (169 ± 1 ka) cierra la Formación Diego Hernández y es probablemente la ignimbrita de mayor extensión y volumen de las Bandas del Sur (más de 20 km³ de roca densa equivalente)."
     ],
     mirar: [
@@ -180,7 +180,7 @@ window.FICHAS = [
     textos: [
       "Un barranco es un valle estrecho que ha excavado el agua. El de San Blas casi siempre está seco, pero cuando llueve fuerte corre el agua y sigue tallándolo.",
       "El agua de la lluvia baja de la cumbre a la costa y va cortando la roca blanda. Así, poco a poco, se forma el barranco. En el sur llueve muy poco: cerca de San Blas, en el aeropuerto del sur, caen de media unos 123 litros por metro cuadrado al año, y suelen caer de golpe.",
-      "Los barrancos ya existían antes de la erupción de El Abrigo: el flujo piroclástico se encauzó por ellos y por las depresiones, y por eso el espesor de la ignimbrita cambia tanto de un lugar a otro. Después, el agua volvió a excavar sobre la roca nueva. En San Blas el corte del barranco deja ver la ignimbrita en su margen izquierda (precipitación media 2005-2025 en el Aeropuerto del Sur: 122,8 mm al año).",
+      "Los barrancos ya existían antes de la erupción de El Abrigo: el flujo piroclástico se encauzó por ellos y por las depresiones, y por eso el espesor de la ignimbrita cambia tanto de un lugar a otro. Después, el agua volvió a excavar sobre la roca nueva. Junto a la reserva, al otro lado de la carretera, el corte de la margen izquierda deja ver la ignimbrita (precipitación media 2005-2025 en el Aeropuerto del Sur: 122,8 mm al año).",
       "La ignimbrita de El Abrigo ocupa no solo antiguos cauces sino también interfluvios, con espesores de hasta 25 m. Los flujos rebasaron las laderas altas del edificio Cañadas y se depositaron en la plataforma costera, encauzados en valles aluviales o barrancos. El IGME denomina «margen izquierda del Barranco de San Blas (Barranco de la Orchilla)» al Lugar de Interés Geológico."
     ],
     mirar: [
@@ -294,12 +294,12 @@ window.FICHAS = [
     fuentes: ["tabona", "suarez"]
   },
   {
-    id: "lig", grupo: "personas", dibujo: "lupa", desde: 1,
+    id: "lig", grupo: "personas", dibujo: "lupa", desde: 1, entorno: true,
     nombre: "Un lugar de interés geológico", otros: "patrimonio que cuidar",
     textos: [
-      "Las rocas del barranco son tan importantes que los científicos las han puesto en una lista especial de lugares de España que hay que cuidar. Por eso: miramos, tocamos con cuidado y no nos llevamos piedras.",
-      "El Instituto Geológico y Minero de España ha incluido la pared del barranco de San Blas en su inventario de Lugares de Interés Geológico. Aquí se puede estudiar la última gran erupción del volcán de Las Cañadas. Una piedra que se llevan, se pierde para siempre.",
-      "El LIG IC4026 «Ignimbritas pleistocenas del Miembro El Abrigo» ocupa 11,73 ha en la margen izquierda del barranco. Su valor científico es muy alto (8), y su riesgo de degradación por la acción humana, alto: por eso tiene prioridad de protección alta.",
+      "Justo al otro lado de la carretera, al lado de la reserva, hay una pared de roca tan importante que los científicos la han puesto en una lista especial de lugares de España que hay que cuidar. Por eso: miramos, tocamos con cuidado y no nos llevamos piedras.",
+      "El Instituto Geológico y Minero de España ha incluido en su inventario de Lugares de Interés Geológico la pared de la margen izquierda del barranco de San Blas, al otro lado de la carretera, junto a la reserva. Allí se puede estudiar la última gran erupción del volcán de Las Cañadas. Una piedra que se llevan, se pierde para siempre.",
+      "El LIG IC4026 «Ignimbritas pleistocenas del Miembro El Abrigo» ocupa 11,73 ha en la margen izquierda del barranco, junto a la reserva, al otro lado de la carretera. Su valor científico es muy alto (8), y su riesgo de degradación por la acción humana, alto: por eso tiene prioridad de protección alta.",
       "Valoraciones del LIG IC4026: valor científico 8 (muy alto), didáctico 5,4 (medio), turístico 3,1 (bajo); susceptibilidad de degradación natural baja y antrópica alta; prioridad de protección alta. Su interés principal es volcanológico, y secundariamente estratigráfico y petrológico-geoquímico."
     ],
     mirar: [
