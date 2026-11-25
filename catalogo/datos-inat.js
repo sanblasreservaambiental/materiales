@@ -1,7 +1,7 @@
 /* Generado por herramientas/actualizar_inat.py — no editar a mano.
  * Observaciones de iNaturalist en un radio de 0.75 km alrededor de San Blas Reserva Ambiental. */
 window.INAT = {
- "actualizado": "2026-11-23",
+ "actualizado": "2026-11-25",
  "zona": {
   "lat": 28.0385,
   "lng": -16.6035,
@@ -1565,30 +1565,6 @@ window.INAT = {
     "credito": "(c) Mónica Pérez-Gil, some rights reserved (CC BY-NC)",
     "licencia": "cc-by-nc",
     "url": "https://www.inaturalist.org/photos/286315998"
-   }
-  },
-  {
-   "taxon_id": 557175,
-   "cientifico": "Hogna ferox",
-   "nombre": {
-    "es": "Tarántula"
-   },
-   "grupo": "aracnidos",
-   "observaciones": 0,
-   "investigacion": 0,
-   "observadores": 0,
-   "ultima": "",
-   "proyecto": 0,
-   "estatus": [
-    "nativa",
-    "vista-reserva"
-   ],
-   "foto": {
-    "src": "img/inat/557175.jpg",
-    "tipo": "foto",
-    "credito": "(c) Óscar Mendez, some rights reserved (CC BY-NC)",
-    "licencia": "cc-by-nc",
-    "url": "https://www.inaturalist.org/photos/166004187"
    }
   },
   {
