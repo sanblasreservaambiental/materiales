@@ -1,7 +1,7 @@
 /* Generado por herramientas/generar_offline.py — no editar a mano. */
 self.OFFLINE = {
- "version": "d55df907b4f5",
- "bytes": 5308884,
+ "version": "cc0759d04e31",
+ "bytes": 5320231,
  "archivos": [
   "./",
   "index.html",
@@ -10,6 +10,7 @@ self.OFFLINE = {
   "datos-inat.js",
   "taxonomia.js",
   "catalogo.js",
+  "offline.js",
   "manifest.webmanifest",
   "img/alcaudon-real.jpg",
   "img/alpispa.jpg",

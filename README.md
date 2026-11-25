@@ -37,6 +37,7 @@ Cuadernos para trabajar en el aula antes y después de la visita, para cuatro ni
 
 ### Catálogo de especies
 - [Catálogo de especies de San Blas](https://sanblasreservaambiental.org/materiales/catalogo/): fichas de las especies de la Reserva y su entorno (ES/EN/DE), con endemismos, conservación y nivel del alumnado. Es una copia de la web del repositorio `sanblasreservaambiental/catalogo`; para actualizarla, copiar aquí su `index.html`, los `.js` (también `sw.js` y `offline.js`), `estilo.css`, `manifest.webmanifest`, `img/` e `iconos/` (sin `herramientas/`). Se puede descargar en el móvil para usarlo sin conexión.
+- [Guía de geología de San Blas](https://sanblasreservaambiental.org/materiales/geologia/): fichas de rocas, relieve, costa y usos humanos de la roca, con la columna de la pared del barranco (LIG IC4026 del IGME), adaptadas a cuatro niveles del alumnado y con sus fuentes citadas. Los textos están en `geologia/datos.js`; las láminas son SVG dibujados en `geologia/dibujos.js`. Tras cambiar cualquier archivo, ejecutar `python3 geologia/herramientas/generar_offline.py` para renovar la copia sin conexión.
 
 ### Fuentes y lecturas
 - [Fuentes y lecturas](https://sanblasreservaambiental.org/materiales/#fuentes) (actualizado el 21 nov. 2026): investigación publicada en la que se apoyan los cuadernos y dossieres, ordenada por temas y con filtro por nivel. Para añadir una fuente, edita `fuentes.js` y cambia la fecha de «actualizado»; no hace falta tocar `index.html`.
