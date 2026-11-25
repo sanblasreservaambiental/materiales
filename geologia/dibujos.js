@@ -180,6 +180,24 @@
       s += `<path d="M0 270 H400" stroke="#cbb88a" stroke-width="1" stroke-dasharray="3 5"/>`;
       return svg(s);
     },
+    bancales() {
+      const r = azar(21);
+      let s = `<rect width="400" height="300" fill="${CIELO}"/>`;
+      // escalones de tierra sujetos por muros de piedra
+      const pasos = [[0, 250, 400], [60, 200, 400], [140, 150, 400], [230, 100, 400]];
+      pasos.forEach(([x, y]) => {
+        s += `<path d="M${x} ${y} H400 V300 H${x}Z" fill="#b08a5a"/>`;
+        s += `<rect x="${x}" y="${y}" width="${400 - x}" height="10" fill="#8f6c43"/>`;
+        // muro de piedra seca
+        for (let k = 0; k < 6; k++) s += piedra(r, x - 4 + (k % 2) * 6, y + 12 + k * 7, 5, k % 2 ? "#7b6f66" : BASALTO, "none");
+      });
+      s += `<path d="M0 250 L0 300 L60 300 L60 200 L0 250Z" fill="${TOSCA}"/>`;
+      // plantas en los bancales
+      [[110, 198], [180, 198], [200, 148], [280, 148], [300, 98], [360, 98], [40, 248], [320, 198]].forEach(([x, y]) => {
+        s += `<path d="M${x} ${y} v-14 M${x} ${y - 6} l-6 -6 M${x} ${y - 9} l6 -6" stroke="${VERDE}" stroke-width="3" stroke-linecap="round"/>`;
+      });
+      return svg(s);
+    },
     abrigo() {
       let s = `<rect width="400" height="300" fill="${CIELO}"/><path d="M0 40 H400 V300 H0Z" fill="${TOSCA}"/>`;
       s += `<path d="M110 300 V200 C110 140 290 140 290 200 V300Z" fill="#6f6149"/>`;

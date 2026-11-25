@@ -20,6 +20,13 @@ window.FUENTES = {
     cita: "IGME. Mapa geológico continuo de España a escala 1:50.000 (GEODE), zona de Tenerife: unidades «Piroclastos sálicos indiferenciados» y «Coladas basálticas» (Pleistoceno superior) y «Playas de arenas y cantos» (Holoceno) en San Blas y su costa. Consulta del 24 de noviembre de 2026.",
     url: "https://info.igme.es/cartografiadigital/geologica/Magna50Hoja.aspx?Id=1107"
   },
+  grafcan: {
+    cita: "GRAFCAN. Descripción de las unidades geológicas de Tenerife (capa litológica TF_LITO): unidades [91] Piroclastos sálicos indiferenciados, [148] Suelos antiguos (zona de Los Cristianos), [149] Coladas basálticas, [215] Suelos, [217] Depósitos de barranco/rambla y [218] Playas de arenas y cantos."
+  },
+  bancales: {
+    cita: "GRAFCAN. Mapa de Bancales de Canarias (2018), servicio WMS de IDECanarias. Consulta del 25 de noviembre de 2026.",
+    url: "https://visor.grafcan.es/?svc=svcBancales"
+  },
   muna: {
     cita: "Santana Pérez, L. M. y Delgado Izquierdo, A. (2026). Precipitaciones en el periodo 2005 a 2025 en Tenerife. MUNA-29. (Datos usados también en el dossier E2 de San Blas.)"
   },
@@ -146,8 +153,8 @@ window.FICHAS = [
     textos: [
       "Además de la tosca clara, en la zona hay piedra oscura y dura: es basalto. Salió del volcán como un río de lava que se enfrió y se hizo roca.",
       "El basalto es lava oscura que corrió como un río y se enfrió. Es mucho más dura que la tosca. En el mapa geológico de la zona de San Blas aparecen las dos rocas: la tosca clara de las nubes ardientes y las coladas oscuras de basalto.",
-      "El mapa geológico del IGME representa en San Blas y su entorno dos grandes unidades del Pleistoceno superior: piroclastos sálicos (la ignimbrita) y coladas basálticas. Las coladas basálticas proceden de erupciones efusivas: la lava fluye y se enfría formando roca compacta, oscura y más resistente a la erosión que la ignimbrita.",
-      "El volcanismo de Tenerife alterna episodios explosivos fonolíticos (sálicos) con erupciones basálticas de los rifts. En el GEODE, las coladas basálticas cartografiadas en la zona son del Pleistoceno superior. El contraste de resistencia entre basalto e ignimbrita explica buena parte del modelado del barranco (erosión diferencial)."
+      "El mapa geológico del IGME representa en San Blas y su entorno dos grandes unidades del Pleistoceno superior: piroclastos sálicos (la ignimbrita) y coladas basálticas. Las coladas basálticas proceden de erupciones efusivas: la lava fluye y se enfría formando roca compacta, oscura y más resistente a la erosión que la ignimbrita. En San Blas, la ignimbrita ocupa casi toda la reserva y el basalto aparece hacia la costa.",
+      "El volcanismo de Tenerife alterna episodios explosivos fonolíticos (sálicos) con erupciones basálticas de los rifts. Las coladas de la zona (unidad [149] del mapa, Pleistoceno superior) pertenecen a las erupciones inferiores del eje de rift SE-NO: un campo de conos estrombolianos pequeños y medianos, de escorias, bombas y lapilli, de los que salieron coladas olivínicas, olivínico-augíticas, piroxénicas y plagioclásico-anfibólicas. El contraste de resistencia entre basalto e ignimbrita explica buena parte del modelado del barranco (erosión diferencial)."
     ],
     mirar: [
       "¿Encuentran alguna piedra negra? Compárenla con la tosca: ¿cuál pesa más? ¿cuál es más dura?",
@@ -155,7 +162,7 @@ window.FICHAS = [
       "Busquen vacuolas (agujeros de gas) en el basalto y compárenlas con las de la pómez.",
       "Discutan qué roca formaría una cornisa y cuál un hueco si se superponen."
     ],
-    fuentes: ["geode", "gonzalez"]
+    fuentes: ["geode", "grafcan", "gonzalez"]
   },
   {
     id: "erosion", grupo: "relieve", dibujo: "alveolos", desde: 1,
@@ -197,8 +204,8 @@ window.FICHAS = [
     textos: [
       "",
       "Desde el avión o desde la autopista, el sur de Tenerife se ve de color claro. Es por la tosca: capas y capas de ceniza y pómez de muchas erupciones que cubrieron esta parte de la isla.",
-      "Las Bandas del Sur son la franja del sureste de Tenerife cubierta por depósitos piroclásticos sálicos: ignimbritas, pómez de caída y oleadas piroclásticas. Estos depósitos, conocidos localmente como «tosca», dan a toda la banda meridional de la isla sus características tonalidades claras.",
-      "Las Bandas del Sur registran la actividad explosiva fonolítica del edificio Cañadas. Rodríguez Losada distingue en ellas tres tipos de depósito: lluvia piroclástica (bien clasificada, suelta, espesor uniforme), coladas piroclásticas o ignimbritas (caóticas, masivas, ricas en ceniza) y oleadas piroclásticas (finas, laminadas, de alta energía). El Miembro El Abrigo es el más moderno de todos ellos."
+      "Las Bandas del Sur son la franja del sureste de Tenerife cubierta por depósitos piroclásticos sálicos: ignimbritas, pómez de caída y oleadas piroclásticas. Estos depósitos, conocidos localmente como «tosca», dan a toda la banda meridional de la isla sus características tonalidades claras. En el mapa geológico forman la unidad «Piroclastos sálicos indiferenciados», la más extendida de los Edificios Cañadas: no son homogéneos, tienen distinto grado de compactación y en ellos predomina la pómez.",
+      "Las Bandas del Sur registran la actividad explosiva fonolítica del edificio Cañadas. Rodríguez Losada distingue en ellas tres tipos de depósito: lluvia piroclástica (bien clasificada, suelta, espesor uniforme), coladas piroclásticas o ignimbritas (caóticas, masivas, ricas en ceniza) y oleadas piroclásticas (finas, laminadas, de alta energía). El Miembro El Abrigo es el más moderno de todos ellos. La cartografía agrupa estos depósitos en la unidad [91] «Piroclastos sálicos indiferenciados», que cubre gran parte de las unidades Cañadas de la serie intermedia por las laderas sur y sureste y contiene, de forma más escasa, líticos básicos y rocas granudas (sienitas)."
     ],
     mirar: [
       "",
@@ -206,7 +213,7 @@ window.FICHAS = [
       "Comparen el color del paisaje del sur con fotos del norte de la isla. ¿Qué rocas dominan en cada sitio?",
       "Clasifiquen depósitos de una foto o del afloramiento como caída, flujo u oleada según su clasificación y estructura."
     ],
-    fuentes: ["losada", "lig"]
+    fuentes: ["losada", "lig", "grafcan"]
   },
   {
     id: "caldera", grupo: "historia", dibujo: "isla", desde: 1,
@@ -249,7 +256,7 @@ window.FICHAS = [
       "En la costa, las olas rompen las rocas y las van redondeando. Así se forman los callaos y la arena.",
       "Las olas golpean las rocas de la costa, las rompen y las van redondeando hasta convertirlas en cantos (callaos) y arena. Estas playas son muy jóvenes: se han formado en los últimos miles de años.",
       "El mapa geológico del IGME representa en la costa de la zona pequeños depósitos de «playas de arenas y cantos» del Holoceno, la época geológica actual (últimos 11.700 años), sobre las rocas volcánicas del Pleistoceno. Es el último capítulo del ciclo: volcán, roca, erosión, transporte y sedimentación.",
-      "Los depósitos de playa holocenos (GEODE) se apoyan sobre coladas basálticas y piroclastos sálicos del Pleistoceno superior. El tamaño y la forma de los cantos permiten deducir la energía del oleaje y el área fuente; comparen cantos de basalto y de ignimbrita: ¿cuáles sobreviven mejor al desgaste?"
+      "Los depósitos de playa holocenos (unidad [218]) se apoyan sobre coladas basálticas y piroclastos sálicos del Pleistoceno superior. En Tenerife suelen estar en la desembocadura de los barrancos o en franjas estrechas adosadas a la costa, con arenas grises y cantos rodados de todas las rocas volcánicas de la zona. El tamaño y la forma de los cantos permiten deducir la energía del oleaje y el área fuente; comparen cantos de basalto y de ignimbrita: ¿cuáles sobreviven mejor al desgaste?"
     ],
     mirar: [
       "¿Los callaos son redondos o tienen picos? ¿Por qué?",
@@ -257,7 +264,7 @@ window.FICHAS = [
       "¿De qué roca son la mayoría de los callaos? ¿Por qué no hay casi pómez?",
       "Estimen el redondeamiento con una tabla visual y relaciónenlo con la dureza de cada roca."
     ],
-    fuentes: ["geode"]
+    fuentes: ["geode", "grafcan"]
   },
   {
     id: "sebadales", grupo: "costa", dibujo: "sebadal", desde: 2, entorno: true,
@@ -275,6 +282,23 @@ window.FICHAS = [
       "Diseñen un panel informativo que explique la relación sustrato-pradera-playa."
     ],
     fuentes: ["miteco"]
+  },
+  {
+    id: "suelos", grupo: "personas", dibujo: "bancales", desde: 1,
+    nombre: "Suelos y bancales", otros: "la tierra que se hace de la roca",
+    textos: [
+      "El suelo es la tierra que se forma cuando la roca se va deshaciendo poco a poco. Para poder cultivar en las laderas, las personas hicieron bancales: escalones de tierra sujetos con muros de piedra.",
+      "Con el tiempo, el agua, el sol y el viento deshacen la roca y se forma suelo, una mezcla de arena y arcilla. En el mapa geológico de San Blas casi todo es roca: tosca y basalto. Para cultivar en estas tierras secas y en pendiente se construyeron bancales, y el mapa de bancales de Canarias marca algunos en los alrededores de la reserva.",
+      "Los suelos de Tenerife son, sobre todo, depósitos arenoso-arcillosos formados por la alteración de coladas y piroclastos. El mapa geológico no cartografía ninguna unidad de suelos en San Blas, donde afloran la ignimbrita (unidad [91]) y las coladas basálticas ([149]). En el sur hay un ejemplo de suelos formados a partir de la tosca al noroeste del puerto de Los Cristianos: una franja de suelos antiguos de 2,12 km por unos 800 m, formada por la alteración y el retrabajamiento de los materiales sálicos de los Edificios Cañadas. El Mapa de Bancales de Canarias (GRAFCAN, 2018) muestra parcelas abancaladas en el entorno de San Blas, huella de la agricultura en esta tierra.",
+      "La ausencia de una unidad de suelos en el mapa 1:50.000 no significa que no haya suelo: indica que no forma depósitos cartografiables a esa escala. Contrasten la cartografía (unidades [91], [149], [148] y [215]) con lo que vean en el campo: espesor del suelo en ladera, en el fondo del barranco y en los bancales, y su relación con la roca de la que procede. El Mapa de Bancales de Canarias (2018) permite situar las parcelas abancaladas del entorno y relacionarlas con la historia agraria del sur."
+    ],
+    mirar: [
+      "Busquen un muro de piedra que sujete la tierra. ¿Para qué servirá?",
+      "Comparen la tierra de un bancal con la de la ladera: ¿dónde hay más? ¿De qué color es?",
+      "Comprueben si el suelo de un bancal se parece a la roca de alrededor (tosca clara o basalto oscuro).",
+      "Midan o estimen el espesor del suelo en tres puntos (ladera, fondo del barranco, bancal) y expliquen las diferencias."
+    ],
+    fuentes: ["grafcan", "bancales", "geode"]
   },
   {
     id: "personas", grupo: "personas", dibujo: "abrigo", desde: 1,

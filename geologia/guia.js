@@ -108,7 +108,9 @@
     document.querySelectorAll("#nivel-marcas li").forEach((li, i) => { li.textContent = NIVELES[i].curso; li.classList.toggle("activo", i === nivel - 1); });
   }
 
+  let actual = null;
   function abrir(f) {
+    actual = f;
     const g = grupo(f.grupo), d = $("#ficha");
     d.style.setProperty("--c", g.color);
     $("#ficha-dibujo").innerHTML = window.DIBUJO(f.dibujo);
@@ -146,6 +148,7 @@
     nivel = +ev.target.value;
     try { localStorage.setItem("geo-nivel", nivel); } catch (e) {}
     pintarNivel(); pintarColumna(); pintarFiltros(); pintar();
+    if ($("#ficha").open && actual) abrir(actual);
   });
   $("#buscar").addEventListener("input", ev => { texto = ev.target.value; pintar(); });
 
