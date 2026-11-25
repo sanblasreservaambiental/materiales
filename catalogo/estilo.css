@@ -23,6 +23,9 @@
   --sombra-alta:0 2px 4px rgba(0,0,0,.45),0 18px 40px rgba(0,0,0,.4);
 }
 *{box-sizing:border-box}
+/* «hidden» debe ganar siempre: si no, .rejilla{display:grid} seguía visible al
+   pasar a la vista en árbol y el árbol quedaba debajo de las tarjetas. */
+[hidden]{display:none !important}
 body{margin:0;background:var(--fondo);color:var(--tinta);font:17px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
 a{color:var(--acento)}
 .envoltura{max-width:1120px;margin:0 auto;padding:0 16px}
@@ -150,10 +153,10 @@ h1{font:650 clamp(2.3rem,6.5vw,4rem)/1.02 var(--serif);margin:0 0 16px;letter-sp
 
 /* Ficha */
 .ficha{border:0;padding:0;border-radius:calc(var(--radio) + 4px);background:var(--papel);color:var(--tinta);box-shadow:var(--sombra-alta);
-  width:min(760px,calc(100vw - 24px));max-height:calc(100vh - 32px);overflow:auto}
+  width:min(760px,calc(100vw - 24px));max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain}
 .ficha::backdrop{background:rgba(28,25,21,.6)}
 .ficha[open]{display:block;position:fixed}
-.ficha form{position:absolute;top:0;right:0;z-index:3}
+.ficha form{position:sticky;top:0;height:0;z-index:3;display:flex;justify-content:flex-end}
 .ficha-foto{position:relative;overflow:hidden}
 .ficha-foto{background:#fff;height:clamp(220px,46vw,380px)}
 .ficha-foto img{width:100%;height:100%;object-fit:cover;display:block}
@@ -166,7 +169,7 @@ h1{font:650 clamp(2.3rem,6.5vw,4rem)/1.02 var(--serif);margin:0 0 16px;letter-sp
 .ficha h3{font:600 1.1rem/1.2 var(--serif);margin:20px 0 6px}
 .ficha-cuerpo > p{margin:0}
 .credito{margin-top:18px !important;font-size:.82rem;color:var(--suave)}
-.cerrar{margin:10px;width:40px;height:40px;border-radius:50%;border:1px solid var(--linea);background:var(--papel);color:var(--tinta);font-size:1.5rem;line-height:1;cursor:pointer;z-index:3}
+.cerrar{margin:10px;box-shadow:var(--sombra);flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--linea);background:var(--papel);color:var(--tinta);font-size:1.5rem;line-height:1;cursor:pointer;z-index:3}
 .acciones{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px !important}
 .boton{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:.92rem;padding:9px 14px;border-radius:10px;background:var(--c,var(--acento));color:var(--sobre-c)}
 button.boton{font-family:inherit;border:0;cursor:pointer}
@@ -214,3 +217,68 @@ button.boton{font-family:inherit;border:0;cursor:pointer}
 .firma a{display:inline-flex;padding:4px;color:color-mix(in srgb,var(--suave) 35%,var(--fondo));transition:color .2s ease}
 .firma a:hover,.firma a:focus-visible{color:var(--suave)}
 .firma img{display:block;width:200px;max-width:100%;height:auto}
+
+/* Marcas de «visto» */
+.solo-vistos{display:inline-flex;align-items:center;gap:6px;font:600 .88rem/1 var(--sans);color:var(--suave);cursor:pointer;
+  background:var(--papel);border:1px solid var(--linea);border-radius:999px;padding:11px 14px;box-shadow:var(--sombra)}
+.solo-vistos svg{color:var(--hoja)}
+.solo-vistos .n{font-size:.78rem;background:color-mix(in srgb,var(--hoja) 14%,var(--papel));color:var(--tinta);border-radius:999px;padding:3px 7px}
+.solo-vistos[aria-pressed="true"]{background:var(--hoja);border-color:var(--hoja);color:var(--sobre-c)}
+.solo-vistos[aria-pressed="true"] svg{color:var(--sobre-c)}
+.vistos-barra{margin:-8px 0 18px;color:var(--suave);font-size:.92rem}
+.enlace{background:none;border:0;padding:0;color:var(--acento);text-decoration:underline;text-underline-offset:3px;font:inherit;cursor:pointer}
+.marca-visto{position:absolute;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;
+  background:var(--hoja);color:var(--sobre-c);box-shadow:0 1px 4px rgba(0,0,0,.25)}
+.tarjeta .marca-visto{top:12px;right:10px;z-index:3}
+.tarjeta.visto{border-color:color-mix(in srgb,var(--hoja) 60%,var(--linea))}
+.hoja{position:relative}
+.hoja .marca-visto{width:22px;height:22px;left:36px;bottom:2px}
+.hoja .marca-visto svg{width:13px;height:13px}
+.hoja.visto{border-color:color-mix(in srgb,var(--hoja) 60%,var(--linea))}
+.ficha-visto{margin:12px 0 4px !important}
+.boton-visto{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:10px 16px;border-radius:999px;cursor:pointer;
+  font:700 .98rem/1.1 var(--sans);color:var(--tinta);background:var(--papel);border:2px solid var(--hoja)}
+.boton-visto .caja{width:18px;height:18px;border:2px solid var(--hoja);border-radius:5px;flex:none}
+.boton-visto[aria-pressed="true"]{background:var(--hoja);color:var(--sobre-c)}
+
+/* Aviso de versión nueva */
+.aviso-version{position:fixed;z-index:20;left:50%;bottom:16px;transform:translateX(-50%);width:min(520px,calc(100vw - 32px));
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding:12px 12px 12px 18px;
+  background:var(--papel);color:var(--tinta);border:1px solid color-mix(in srgb,var(--hoja) 45%,var(--linea));border-radius:14px;box-shadow:var(--sombra-alta);font-weight:600}
+
+/* Móvil */
+@media (max-width:760px){
+  /* Filtros en una fila que se desliza: en los niveles 3 y 4 hay 10 o más y
+     apilados ocupaban media pantalla */
+  .herramientas{gap:12px;margin:16px 0 20px}
+  .filtros{flex-wrap:nowrap;overflow-x:auto;margin:0 -16px;padding:6px 16px 10px;width:calc(100% + 32px);scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}
+  .filtros::-webkit-scrollbar{display:none}
+  .filtros button{flex:none}
+  .lado{flex:1 1 100%;justify-content:flex-start;gap:8px}
+  .buscar{flex:1 1 100%}
+  /* Marcas del nivel sin solaparse */
+  .nivel{padding:14px 14px 12px}
+  .nivel-marcas{gap:6px;font-size:.74rem;line-height:1.25}
+  .nivel-marcas li:nth-child(2),.nivel-marcas li:nth-child(3){transform:none}
+  /* Dos tarjetas por fila */
+  .rejilla{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .seccion{font-size:1.08rem}
+  .cuerpo{padding:10px 11px 12px;gap:2px}
+  .cuerpo h3{font-size:1.02rem}
+  .cuerpo .cientifico,.cuerpo .rango{font-size:.8rem;overflow-wrap:anywhere}
+  .meta{gap:4px;padding-top:8px}
+  .chip{font-size:.62rem;padding:4px 6px;letter-spacing:.02em}
+  .tarjeta .marca-visto{width:26px;height:26px;top:10px;right:8px}
+  /* Árbol con menos sangría */
+  .arbol ul{margin-left:6px;padding-left:14px}
+  .arbol ul>li::before{left:-14px;width:10px}
+  .arbol ul>li:last-child::after{left:-16px}
+  .arbol summary{padding:9px 6px}
+  .hojas{margin-left:0}
+  /* Ficha casi a pantalla completa */
+  .ficha{width:calc(100vw - 16px);max-height:calc(100vh - 16px);max-height:calc(100dvh - 16px)}
+  .ficha-foto{height:clamp(200px,58vw,320px)}
+  .llevar,.inat{padding:20px 18px}
+  .llevar{flex-direction:column}
+}
