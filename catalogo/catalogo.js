@@ -4,13 +4,18 @@
       antetitulo: "San Blas Reserva Ambiental · Tenerife",
       titulo: "Catálogo de especies",
       entradilla: "Plantas, aves y otros seres vivos que viven en la reserva o pasan por ella: cómo reconocerlas, cómo viven y qué usos les dieron nuestros mayores.",
-      recuento: n => `${n} especies en el catálogo`,
+      recuento: n => `${n} ${n === 1 ? "especie" : "especies"} en el catálogo`,
       todas: "Todas", buscar: "Buscar especie", buscarPh: "Busquen por nombre…",
       vacio: "No encontramos ninguna especie con ese nombre.",
       descripcion: "Cómo es", usos: "Usos y cultura",
       sinFicha: "Especie observada en la reserva o en su entorno y registrada en iNaturalist. Estamos preparando su ficha.",
       verInat: "Ver en iNaturalist", mapaCanarias: "Mapa en todo Canarias", obs: n => `${n} ${n === 1 ? "observación" : "observaciones"} en San Blas y su entorno`,
       foto: "Imagen", cerrar: "Cerrar",
+      visto: "Visto", marcarVisto: "¿Lo han visto? Márquenlo", yaVisto: "Visto durante la visita", soloVistos: "Vistos",
+      vistosAyuda: n => `Llevan ${n} ${n === 1 ? "especie vista" : "especies vistas"}. Las marcas se guardan solo en este dispositivo y funcionan sin conexión.`,
+      vaciaVistos: "Todavía no han marcado ninguna especie. Abran una ficha y pulsen «¿Lo han visto? Márquenlo».",
+      borrarVistos: "Borrar las marcas para otra visita", borrarVistosSeguro: "¿Borrar todas las marcas de «visto» de este dispositivo?",
+      nuevaVersion: "Hay una versión nueva del catálogo.", actualizar: "Actualizar",
       nivel: "Nivel del alumnado", sinClasificar: "Sin clasificar", islasEt: "Islas", islasTodas: "todas las islas Canarias", islasN: { H: "El Hierro", P: "La Palma", G: "La Gomera", T: "Tenerife", C: "Gran Canaria", F: "Fuerteventura", L: "Lanzarote" }, litoralTit: "En el entorno de la reserva", litoralTxt: "Especies observadas en iNaturalist a menos de 750 m de San Blas pero fuera de la reserva: en el mar, la costa y los alrededores. Son especies limítrofes, no de la reserva.",
       vistaTarjetas: "Tarjetas", vistaArbol: "Árbol", desplegar: "Desplegar todo", plegar: "Plegar todo", grupoEt: "Grupo",
       rangos: { reino: "Reino", clase: "Clase", orden: "Orden", familia: "Familia" },
@@ -40,6 +45,11 @@
       sinFicha: "Species observed in or around the reserve and recorded on iNaturalist. Its profile is being prepared.",
       verInat: "View on iNaturalist", mapaCanarias: "Map across the Canary Islands", obs: n => `${n} ${n === 1 ? "observation" : "observations"} in and around San Blas`,
       foto: "Image", cerrar: "Close",
+      visto: "Seen", marcarVisto: "Did you see it? Tick it", yaVisto: "Seen during the visit", soloVistos: "Seen",
+      vistosAyuda: n => `${n} species seen so far. Ticks are stored only on this device and work offline.`,
+      vaciaVistos: "You have not ticked any species yet. Open a profile and tap “Did you see it? Tick it”.",
+      borrarVistos: "Clear ticks for another visit", borrarVistosSeguro: "Clear every “seen” tick on this device?",
+      nuevaVersion: "A new version of the catalogue is available.", actualizar: "Update",
       nivel: "Student level", sinClasificar: "Unclassified", islasEt: "Islands", islasTodas: "all the Canary Islands", islasN: { H: "El Hierro", P: "La Palma", G: "La Gomera", T: "Tenerife", C: "Gran Canaria", F: "Fuerteventura", L: "Lanzarote" }, litoralTit: "Around the reserve", litoralTxt: "Species recorded on iNaturalist within 750 m of San Blas but outside the reserve: at sea, on the coast and nearby. They are neighbouring species, not part of the reserve.",
       vistaTarjetas: "Cards", vistaArbol: "Tree", desplegar: "Expand all", plegar: "Collapse all", grupoEt: "Group",
       rangos: { reino: "Kingdom", clase: "Class", orden: "Order", familia: "Family" },
@@ -62,13 +72,18 @@
       antetitulo: "Umweltreservat San Blas · Teneriffa",
       titulo: "Artenkatalog",
       entradilla: "Pflanzen, Vögel und andere Lebewesen, die im Reservat leben oder es durchqueren: wie man sie erkennt, wie sie leben und wie die Inselbewohner sie traditionell nutzten.",
-      recuento: n => `${n} Arten im Katalog`,
+      recuento: n => `${n} ${n === 1 ? "Art" : "Arten"} im Katalog`,
       todas: "Alle", buscar: "Art suchen", buscarPh: "Nach Namen suchen…",
       vacio: "Keine Art mit diesem Namen gefunden.",
       descripcion: "Merkmale", usos: "Nutzung und Kultur",
       sinFicha: "Im Reservat oder in seiner Umgebung beobachtete und auf iNaturalist erfasste Art. Das Porträt ist in Vorbereitung.",
       verInat: "Auf iNaturalist ansehen", mapaCanarias: "Karte der Kanaren", obs: n => `${n} ${n === 1 ? "Beobachtung" : "Beobachtungen"} in und um San Blas`,
       foto: "Bild", cerrar: "Schließen",
+      visto: "Gesehen", marcarVisto: "Gesehen? Abhaken", yaVisto: "Beim Besuch gesehen", soloVistos: "Gesehen",
+      vistosAyuda: n => `${n} ${n === 1 ? "Art" : "Arten"} gesehen. Die Häkchen werden nur auf diesem Gerät gespeichert und funktionieren offline.`,
+      vaciaVistos: "Noch keine Art abgehakt. Öffnen Sie ein Porträt und tippen Sie auf „Gesehen? Abhaken“.",
+      borrarVistos: "Häkchen für einen neuen Besuch löschen", borrarVistosSeguro: "Alle „Gesehen“-Häkchen auf diesem Gerät löschen?",
+      nuevaVersion: "Eine neue Version des Katalogs ist verfügbar.", actualizar: "Aktualisieren",
       nivel: "Lernstufe", sinClasificar: "Nicht zugeordnet", islasEt: "Inseln", islasTodas: "alle Kanarischen Inseln", islasN: { H: "El Hierro", P: "La Palma", G: "La Gomera", T: "Teneriffa", C: "Gran Canaria", F: "Fuerteventura", L: "Lanzarote" }, litoralTit: "Rund um das Reservat", litoralTxt: "Auf iNaturalist im Umkreis von 750 m um San Blas, aber außerhalb des Reservats beobachtete Arten: im Meer, an der Küste und in der Umgebung. Es sind Nachbararten, nicht Arten des Reservats.",
       vistaTarjetas: "Karten", vistaArbol: "Baum", desplegar: "Alle aufklappen", plegar: "Alle zuklappen", grupoEt: "Gruppe",
       rangos: { reino: "Reich", clase: "Klasse", orden: "Ordnung", familia: "Familie" },
@@ -144,6 +159,15 @@
   { const n = +new URLSearchParams(location.search).get("nivel"); if (n >= 1 && n <= 4) nivel = n; }
   try { const l = localStorage.getItem("catalogo-idioma"); if (T[l]) lang = l; } catch (e) {}
   const q = new URLSearchParams(location.search).get("lang"); if (T[q]) lang = q;
+
+  /* Marcas de «visto»: los seres vivos vistos durante la visita. Se guardan en
+   * este dispositivo (localStorage), así que funcionan sin conexión. */
+  const vistos = new Set();
+  let soloVistos = false;
+  try { (JSON.parse(localStorage.getItem("catalogo-vistos")) || []).forEach(id => vistos.add(id)); } catch (e) {}
+  const guardarVistos = () => { try { localStorage.setItem("catalogo-vistos", JSON.stringify([...vistos])); } catch (e) {} };
+  const ICONO_VISTO = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>';
+  const marcaVisto = () => { const s = document.createElement("span"); s.className = "marca-visto"; s.innerHTML = ICONO_VISTO; s.title = T[lang].visto; return s; };
 
   const tr = (o) => o ? (o[lang] || o.es || o.en || "") : "";
   const nombre = e => (e.nombre && (e.nombre[lang] || (lang !== "es" && e.nombre.en))) || e.cientifico;
@@ -239,6 +263,7 @@
     b.innerHTML = `<span class="miniatura ${e.foto && e.foto.tipo === "lamina" ? "lamina" : ""}">${img}</span>
       <span class="cuerpo"><h3></h3><p class="cientifico"></p><p class="rango" hidden></p><span class="meta">${chips(e)}</span></span>`;
     b.querySelector("h3").textContent = nombre(e);
+    if (vistos.has(e.id)) { b.classList.add("visto"); b.appendChild(marcaVisto()); b.setAttribute("aria-label", `${nombre(e)} · ${T[lang].visto}`); }
     b.querySelector(".cientifico").textContent = e.cientifico;
     if (nombre(e) === e.cientifico) b.querySelector(".cientifico").hidden = true;
     const x = taxo(e), r = b.querySelector(".rango");
@@ -289,6 +314,7 @@
             b.innerHTML = (e.foto && e.foto.src ? `<img loading="lazy" src="${e.foto.src}" alt="">` : '<span class="sin"></span>') + "<span><b></b><i></i></span>";
             b.querySelector("b").textContent = nombre(e);
             b.querySelector("i").textContent = nombre(e) === e.cientifico ? "" : e.cientifico;
+            if (vistos.has(e.id)) { b.classList.add("visto"); b.appendChild(marcaVisto()); }
             b.onclick = () => abrir(e);
             hj.appendChild(b);
           });
@@ -303,10 +329,17 @@
   function pintar() {
     const t = norm(texto);
     const lista = especies.filter(e => (grupo === "todas" || categoria(e).id === grupo) &&
+      (!soloVistos || vistos.has(e.id)) &&
       (!t || norm([e.cientifico, ...Object.values(e.nombre || {}), ...Object.values(taxo(e)).flat()].join(" ")).includes(t)));
     document.querySelectorAll("#vista button").forEach(b => b.setAttribute("aria-pressed", b.dataset.vista === vista));
     $("#rejilla").hidden = vista === "arbol"; $("#arbol-cont").hidden = vista !== "arbol";
     $("#vacio").hidden = lista.length > 0;
+    $("#vacio").textContent = soloVistos && !vistos.size ? T[lang].vaciaVistos : T[lang].vacio;
+    $("#solo-vistos").setAttribute("aria-pressed", soloVistos);
+    $("#vistos-n").textContent = vistos.size;
+    $("#vistos-barra").hidden = !soloVistos || !vistos.size;
+    $("#vistos-txt").textContent = T[lang].vistosAyuda(vistos.size);
+    const abierto = !!t || grupo !== "todas" || soloVistos;
     const tierra = lista.filter(e => !e.entorno), mar = lista.filter(e => e.entorno);
     const cabeceraMar = (etiqueta) => {
       const h = document.createElement(etiqueta); h.className = "seccion litoral";
@@ -317,11 +350,11 @@
     };
     if (vista === "arbol") {
       const ul = $("#arbol"); ul.innerHTML = "";
-      pintarArbol(tierra, !!t || grupo !== "todas", ul);
+      pintarArbol(tierra, abierto, ul);
       if (mar.length) {
         const li = document.createElement("li"); li.className = "arbol-litoral"; li.appendChild(cabeceraMar("h3"));
         const sub = document.createElement("ul"); sub.className = "arbol"; li.appendChild(sub); ul.appendChild(li);
-        pintarArbol(mar, !!t || grupo !== "todas", sub);
+        pintarArbol(mar, abierto, sub);
       }
       return;
     }
@@ -354,6 +387,7 @@
     $("#ficha-grupo").textContent = tr(GRUPOS[e.grupo]);
     $("#ficha-nombre").textContent = nombre(e);
     $("#ficha-cientifico").textContent = e.cientifico;
+    fichaActual = e; botonVisto();
     const otros = ["es", "en", "de"].filter(l => l !== lang && e.nombre && e.nombre[l] && e.nombre[l] !== nombre(e))
       .map(l => `${l.toUpperCase()}: ${e.nombre[l]}`);
     $("#ficha-otros").textContent = otros.join(" · ");
@@ -400,10 +434,19 @@
     }
     history.replaceState(null, "", "#" + e.id);
     if (!d.open) d.showModal();
+    colocarAviso();
     d.scrollTop = 0;
   }
 
-  $("#ficha").addEventListener("close", () => history.replaceState(null, "", location.pathname + location.search));
+  $("#ficha").addEventListener("close", () => { history.replaceState(null, "", location.pathname + location.search); colocarAviso(); });
+  // Con la ficha abierta, lo de fuera no se puede pulsar: el aviso de versión
+  // nueva se mete dentro de la ficha mientras está abierta.
+  function colocarAviso() {
+    const a = $("#aviso-version"), d = $("#ficha");
+    if (a.hidden) return;
+    const destino = d.open ? d : document.body;
+    if (a.parentNode !== destino) destino.appendChild(a);
+  }
   $("#ficha").addEventListener("click", ev => { if (ev.target === ev.currentTarget) ev.currentTarget.close(); });
   document.querySelectorAll(".idiomas button").forEach(b => b.onclick = () => {
     lang = b.dataset.lang;
@@ -424,6 +467,32 @@
     try { localStorage.setItem("catalogo-vista", vista); } catch (e) {}
     pintar();
   });
+  /* Botón de la ficha y filtro «Vistos» */
+  let fichaActual = null;
+  function botonVisto() {
+    const b = $("#ficha-visto"), si = !!fichaActual && vistos.has(fichaActual.id);
+    b.setAttribute("aria-pressed", si);
+    b.innerHTML = (si ? ICONO_VISTO : '<span class="caja" aria-hidden="true"></span>') + "<span></span>";
+    b.lastChild.textContent = si ? T[lang].yaVisto : T[lang].marcarVisto;
+  }
+  $("#ficha-visto").onclick = () => {
+    if (!fichaActual) return;
+    if (vistos.has(fichaActual.id)) vistos.delete(fichaActual.id); else vistos.add(fichaActual.id);
+    guardarVistos(); botonVisto(); pintar();
+  };
+  $("#solo-vistos").onclick = () => { soloVistos = !soloVistos; pintar(); };
+  $("#borrar-vistos").onclick = () => {
+    if (!confirm(T[lang].borrarVistosSeguro)) return;
+    vistos.clear(); guardarVistos(); pintar();
+  };
+  // Si se marca algo en otra pestaña (o en la app instalada), se refleja aquí.
+  window.addEventListener("storage", ev => {
+    if (ev.key !== "catalogo-vistos") return;
+    vistos.clear();
+    try { (JSON.parse(ev.newValue) || []).forEach(id => vistos.add(id)); } catch (e) {}
+    pintar(); if ($("#ficha").open) botonVisto();
+  });
+
   $("#desplegar").onclick = () => document.querySelectorAll("#arbol details").forEach(d => d.open = true);
   $("#plegar").onclick = () => document.querySelectorAll("#arbol details").forEach(d => d.open = false);
 
@@ -464,7 +533,23 @@
     const bD = $("#descargar"), bQ = $("#quitar"), barra = $("#llevar-barra"), est = $("#llevar-estado");
     const ponEstado = (k, txt) => { llevarEstado = k; est.textContent = txt || T[lang][k] || ""; };
     $("#llevar").hidden = false; $("#ir-llevar").hidden = false;
-    navigator.serviceWorker.register("sw.js").catch(() => {});
+    // Actualizaciones: el navegador solo comprueba sw.js al abrir la página, y
+    // una app instalada puede quedarse abierta días. Se comprueba también al
+    // volver a la app y cada 30 minutos. sw.js importa offline.js, cuya
+    // versión cambia con cualquier archivo; «updateViaCache: none» evita que
+    // la caché HTTP del servidor retrase la comprobación.
+    const habiaControl = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).then(reg => {
+      const comprobar = () => { if (navigator.onLine !== false) reg.update().catch(() => {}); };
+      document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") comprobar(); });
+      setInterval(comprobar, 30 * 60 * 1000);
+    }).catch(() => {});
+    // El service worker nuevo se activa solo (skipWaiting) en cuanto tiene
+    // guardada la versión nueva completa; entonces se avisa para recargar.
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (habiaControl) { $("#aviso-version").hidden = false; colocarAviso(); }
+    });
+    $("#actualizar").onclick = () => location.reload();
     const yaDescargado = async () => (await caches.keys()).some(k => k.startsWith("catalogo-sanblas-") && k !== "catalogo-sanblas-fuentes");
     const mostrar = async () => {
       const si = await yaDescargado();

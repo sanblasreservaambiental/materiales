@@ -56,6 +56,7 @@
       <button type="button" data-vista="tarjetas"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span data-t="vistaTarjetas"></span></button>
       <button type="button" data-vista="arbol"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3v18M5 8h6M5 15h6M11 8v-2h8v4h-8zM11 15v-2h8v4h-8z"/></svg><span data-t="vistaArbol"></span></button>
     </div>
+    <button type="button" class="solo-vistos" id="solo-vistos" aria-pressed="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span data-t="soloVistos"></span><span class="n" id="vistos-n">0</span></button>
     <label class="buscar">
       <span class="vh" data-t="buscar"></span>
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -64,6 +65,7 @@
   </div>
 
   </div>
+  <p class="vistos-barra" id="vistos-barra" hidden><span id="vistos-txt"></span> <button type="button" class="enlace" id="borrar-vistos" data-t="borrarVistos"></button></p>
   <div id="rejilla" class="rejilla" aria-live="polite"></div>
   <div id="arbol-cont" hidden>
     <p class="arbol-acciones"><button type="button" id="desplegar" data-t="desplegar"></button> · <button type="button" id="plegar" data-t="plegar"></button></p>
@@ -111,6 +113,11 @@
   </div>
 </footer>
 
+<div class="aviso-version" id="aviso-version" role="status" hidden>
+  <span data-t="nuevaVersion"></span>
+  <button type="button" class="boton" style="--c:var(--hoja)" id="actualizar" data-t="actualizar"></button>
+</div>
+
 <dialog id="ficha" class="ficha" aria-labelledby="ficha-nombre">
   <form method="dialog"><button class="cerrar" aria-label="×" data-t-aria="cerrar">×</button></form>
   <div class="ficha-foto"><img id="ficha-img" alt=""></div>
@@ -118,6 +125,7 @@
     <p class="ficha-grupo" id="ficha-grupo"></p>
     <h2 id="ficha-nombre"></h2>
     <p class="cientifico" id="ficha-cientifico"></p>
+    <p class="ficha-visto"><button type="button" class="boton-visto" id="ficha-visto" aria-pressed="false"></button></p>
     <p class="otros-nombres" id="ficha-otros"></p>
     <div class="meta" id="ficha-estatus"></div>
     <p class="islas" id="ficha-islas" hidden></p>
