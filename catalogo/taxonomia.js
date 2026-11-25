@@ -48,7 +48,6 @@ window.TAXONOMIA = {
 "frankenia pulverulenta": {"reino": ["Plantae", "plantas"], "clase": ["Magnoliopsida", "dicotiledóneas"], "orden": ["Caryophyllales", "cactus, claveles y afines"], "familia": ["Frankeniaceae", "frankeniáceas"]},
 "gallinula chloropus": {"reino": ["Animalia", "animales"], "clase": ["Aves", "aves"], "orden": ["Gruiformes", "gallinetas, fochas y grullas"], "familia": ["Rallidae", "gallinetas y fochas"]},
 "gallotia galloti": {"reino": ["Animalia", "animales"], "clase": ["Reptilia", "reptiles"], "orden": ["Squamata", "lagartos y serpientes"], "familia": ["Lacertidae", "lacértidos"]},
-"hogna ferox": {"reino": ["Animalia", "animales"], "clase": ["Arachnida", "arácnidos"], "orden": ["Araneae", "arañas"], "familia": ["Lycosidae", "arañas lobo (tarántulas)"]},
 "ischiodon aegyptius": {"reino": ["Animalia", "animales"], "clase": ["Insecta", "insectos"], "orden": ["Diptera", "moscas y mosquitos"], "familia": ["Syrphidae", "sírfidos"]},
 "ischnura senegalensis": {"reino": ["Animalia", "animales"], "clase": ["Insecta", "insectos"], "orden": ["Odonata", "libélulas y caballitos del diablo"], "familia": ["Coenagrionidae", "caballitos del diablo"]},
 "kleinia neriifolia": {"reino": ["Plantae", "plantas"], "clase": ["Magnoliopsida", "dicotiledóneas"], "orden": ["Asterales", "margaritas y afines"], "familia": ["Asteraceae", "compuestas"]},

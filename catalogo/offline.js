@@ -1,7 +1,7 @@
 /* Generado por herramientas/generar_offline.py — no editar a mano. */
 self.OFFLINE = {
- "version": "c128d3a82f18",
- "bytes": 5345912,
+ "version": "d55df907b4f5",
+ "bytes": 5308884,
  "archivos": [
   "./",
   "index.html",
@@ -76,7 +76,6 @@ self.OFFLINE = {
   "img/inat/52053.jpg",
   "img/inat/525546.jpeg",
   "img/inat/525552.jpg",
-  "img/inat/557175.jpg",
   "img/inat/557604.jpg",
   "img/inat/558336.jpeg",
   "img/inat/564198.jpeg",
