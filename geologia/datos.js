@@ -23,10 +23,6 @@ window.FUENTES = {
   grafcan: {
     cita: "GRAFCAN. Descripción de las unidades geológicas de Tenerife (capa litológica TF_LITO): unidades [91] Piroclastos sálicos indiferenciados, [148] Suelos antiguos (zona de Los Cristianos), [149] Coladas basálticas, [215] Suelos, [217] Depósitos de barranco/rambla y [218] Playas de arenas y cantos."
   },
-  bancales: {
-    cita: "GRAFCAN. Mapa de Bancales de Canarias (2018), servicio WMS de IDECanarias. Consulta del 25 de noviembre de 2026.",
-    url: "https://visor.grafcan.es/?svc=svcBancales"
-  },
   muna: {
     cita: "Santana Pérez, L. M. y Delgado Izquierdo, A. (2026). Precipitaciones en el periodo 2005 a 2025 en Tenerife. MUNA-29. (Datos usados también en el dossier E2 de San Blas.)"
   },
@@ -284,21 +280,21 @@ window.FICHAS = [
     fuentes: ["miteco"]
   },
   {
-    id: "suelos", grupo: "personas", dibujo: "bancales", desde: 1,
-    nombre: "Suelos y bancales", otros: "la tierra que se hace de la roca",
+    id: "suelos", grupo: "personas", dibujo: "suelo", desde: 1,
+    nombre: "El suelo", otros: "la tierra que se hace de la roca",
     textos: [
-      "El suelo es la tierra que se forma cuando la roca se va deshaciendo poco a poco. Para poder cultivar en las laderas, las personas hicieron bancales: escalones de tierra sujetos con muros de piedra.",
-      "Con el tiempo, el agua, el sol y el viento deshacen la roca y se forma suelo, una mezcla de arena y arcilla. En el mapa geológico de San Blas casi todo es roca: tosca y basalto. Para cultivar en estas tierras secas y en pendiente se construyeron bancales, y el mapa de bancales de Canarias marca algunos en los alrededores de la reserva.",
-      "Los suelos de Tenerife son, sobre todo, depósitos arenoso-arcillosos formados por la alteración de coladas y piroclastos. El mapa geológico no cartografía ninguna unidad de suelos en San Blas, donde afloran la ignimbrita (unidad [91]) y las coladas basálticas ([149]). En el sur hay un ejemplo de suelos formados a partir de la tosca al noroeste del puerto de Los Cristianos: una franja de suelos antiguos de 2,12 km por unos 800 m, formada por la alteración y el retrabajamiento de los materiales sálicos de los Edificios Cañadas. El Mapa de Bancales de Canarias (GRAFCAN, 2018) muestra parcelas abancaladas en el entorno de San Blas, huella de la agricultura en esta tierra.",
-      "La ausencia de una unidad de suelos en el mapa 1:50.000 no significa que no haya suelo: indica que no forma depósitos cartografiables a esa escala. Contrasten la cartografía (unidades [91], [149], [148] y [215]) con lo que vean en el campo: espesor del suelo en ladera, en el fondo del barranco y en los bancales, y su relación con la roca de la que procede. El Mapa de Bancales de Canarias (2018) permite situar las parcelas abancaladas del entorno y relacionarlas con la historia agraria del sur."
+      "El suelo es la tierra que se forma cuando la roca se va deshaciendo poco a poco. Sin suelo, las plantas no tendrían dónde agarrarse.",
+      "Con el tiempo, el agua, el sol y el viento deshacen la roca y se forma suelo, una mezcla de arena y arcilla. En el mapa geológico de San Blas casi todo es roca: tosca y basalto.",
+      "Los suelos de Tenerife son, sobre todo, depósitos arenoso-arcillosos formados por la alteración de coladas y piroclastos. El mapa geológico no cartografía ninguna unidad de suelos en San Blas, donde afloran la ignimbrita (unidad [91]) y las coladas basálticas ([149]). En el sur hay un ejemplo de suelos formados a partir de la tosca al noroeste del puerto de Los Cristianos: una franja de suelos antiguos de 2,12 km por unos 800 m, formada por la alteración y el retrabajamiento de los materiales sálicos de los Edificios Cañadas.",
+      "La ausencia de una unidad de suelos en el mapa 1:50.000 no significa que no haya suelo: indica que no forma depósitos cartografiables a esa escala. Contrasten la cartografía (unidades [91], [149], [148] y [215]) con lo que vean en el campo: espesor del suelo en la ladera y en el fondo del barranco, y su relación con la roca de la que procede."
     ],
     mirar: [
-      "Busquen un muro de piedra que sujete la tierra. ¿Para qué servirá?",
-      "Comparen la tierra de un bancal con la de la ladera: ¿dónde hay más? ¿De qué color es?",
-      "Comprueben si el suelo de un bancal se parece a la roca de alrededor (tosca clara o basalto oscuro).",
-      "Midan o estimen el espesor del suelo en tres puntos (ladera, fondo del barranco, bancal) y expliquen las diferencias."
+      "Cojan un puñado de tierra (sin arrancar plantas): ¿es fina como harina o tiene piedritas?",
+      "Comparen la tierra de la ladera con la del fondo del barranco: ¿dónde hay más? ¿De qué color es?",
+      "Comprueben si el suelo se parece a la roca de alrededor (tosca clara o basalto oscuro).",
+      "Estimen el espesor del suelo en dos puntos (ladera y fondo del barranco) y expliquen las diferencias."
     ],
-    fuentes: ["grafcan", "bancales", "geode"]
+    fuentes: ["grafcan", "geode"]
   },
   {
     id: "personas", grupo: "personas", dibujo: "abrigo", desde: 1,

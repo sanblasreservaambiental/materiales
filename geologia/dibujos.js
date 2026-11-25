@@ -180,6 +180,22 @@
       s += `<path d="M0 270 H400" stroke="#cbb88a" stroke-width="1" stroke-dasharray="3 5"/>`;
       return svg(s);
     },
+    suelo() {
+      const r = azar(27);
+      let s = `<rect width="400" height="300" fill="${CIELO}"/>`;
+      s += `<rect y="70" width="400" height="70" fill="#a9845a"/>`;
+      s += `<path d="M0 140 C80 150 160 132 240 146 C300 156 360 140 400 146 V210 H0Z" fill="#d6c3a0"/>`;
+      s += `<rect y="196" width="400" height="104" fill="${TOSCA}"/>`;
+      s += relleno(r, 0, 150, 400, 60, 40, (x, y) => piedra(r, x, y, 3 + r() * 7, r() > .5 ? POMEZ : "#bfae8c", "#a89a80", .6));
+      s += relleno(r, 0, 205, 400, 90, 18, (x, y) => piedra(r, x, y, 4 + r() * 10, POMEZ, "#a89a80"));
+      s += relleno(r, 0, 74, 400, 60, 90, (x, y) => `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(0.8 + r() * 1.4).toFixed(1)}" fill="#7d5f3d"/>`);
+      [[90, 70], [250, 70], [330, 70]].forEach(([x, y]) => {
+        s += `<path d="M${x} ${y} v-26 M${x} ${y - 12} l-10 -10 M${x} ${y - 18} l10 -10" stroke="${VERDE}" stroke-width="4" stroke-linecap="round"/>`;
+        s += `<path d="M${x} ${y} q-8 24 -18 40 M${x} ${y} q4 30 2 52 M${x} ${y} q10 18 20 30" stroke="#5a4630" stroke-width="1.5" fill="none"/>`;
+      });
+      s += `<text x="392" y="110" text-anchor="end" font-family="sans-serif" font-size="13" fill="#fff">suelo</text><text x="392" y="186" text-anchor="end" font-family="sans-serif" font-size="13" fill="${TINTA}">roca alterada</text><text x="392" y="288" text-anchor="end" font-family="sans-serif" font-size="13" fill="${TINTA}">roca (tosca)</text>`;
+      return svg(s);
+    },
     bancales() {
       const r = azar(21);
       let s = `<rect width="400" height="300" fill="${CIELO}"/>`;
